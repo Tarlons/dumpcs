@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-06-25 09:17:28.856070300 UTC
+// 2025-07-03 11:16:30.471941500 UTC
 
 #pragma once
 
@@ -57,7 +57,7 @@ namespace cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             namespace RnSoftbodyCapsule_t {
-                constexpr std::ptrdiff_t m_vCenter = 0x0; // Vector[2]
+                constexpr std::ptrdiff_t m_vCenter = 0x0; // 
                 constexpr std::ptrdiff_t m_flRadius = 0x18; // float32
                 constexpr std::ptrdiff_t m_nParticle = 0x1C; // uint16[2]
             }
@@ -121,7 +121,7 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_InitPose = 0x120; // CUtlVector<CTransform>
                 constexpr std::ptrdiff_t m_Rods = 0x138; // 
                 constexpr std::ptrdiff_t m_Twists = 0x150; // CUtlVector<FeTwistConstraint_t>
-                constexpr std::ptrdiff_t m_HingeLimits = 0x168; // CUtlVector<FeHingeLimit_t>
+                constexpr std::ptrdiff_t m_HingeLimits = 0x168; // 
                 constexpr std::ptrdiff_t m_AntiTunnelProbes = 0x180; // CUtlVector<FeAntiTunnelProbe_t>
                 constexpr std::ptrdiff_t m_AntiTunnelTargetNodes = 0x198; // CUtlVector<uint16>
                 constexpr std::ptrdiff_t m_AxialEdges = 0x1B0; // CUtlVector<FeAxialEdgeBend_t>
@@ -337,7 +337,7 @@ namespace cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             namespace RnCapsule_t {
-                constexpr std::ptrdiff_t m_vCenter = 0x0; // Vector[2]
+                constexpr std::ptrdiff_t m_vCenter = 0x0; // 
                 constexpr std::ptrdiff_t m_flRadius = 0x18; // float32
             }
             // Parent: None

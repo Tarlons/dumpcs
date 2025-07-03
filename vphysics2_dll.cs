@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-06-25 09:17:28.856070300 UTC
+// 2025-07-03 11:16:30.471941500 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: vphysics2.dll
@@ -52,7 +52,7 @@ namespace CS2Dumper.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class RnSoftbodyCapsule_t {
-            public const nint m_vCenter = 0x0; // Vector[2]
+            public const nint m_vCenter = 0x0; // 
             public const nint m_flRadius = 0x18; // float32
             public const nint m_nParticle = 0x1C; // uint16[2]
         }
@@ -116,7 +116,7 @@ namespace CS2Dumper.Schemas {
             public const nint m_InitPose = 0x120; // CUtlVector<CTransform>
             public const nint m_Rods = 0x138; // 
             public const nint m_Twists = 0x150; // CUtlVector<FeTwistConstraint_t>
-            public const nint m_HingeLimits = 0x168; // CUtlVector<FeHingeLimit_t>
+            public const nint m_HingeLimits = 0x168; // 
             public const nint m_AntiTunnelProbes = 0x180; // CUtlVector<FeAntiTunnelProbe_t>
             public const nint m_AntiTunnelTargetNodes = 0x198; // CUtlVector<uint16>
             public const nint m_AxialEdges = 0x1B0; // CUtlVector<FeAxialEdgeBend_t>
@@ -332,7 +332,7 @@ namespace CS2Dumper.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class RnCapsule_t {
-            public const nint m_vCenter = 0x0; // Vector[2]
+            public const nint m_vCenter = 0x0; // 
             public const nint m_flRadius = 0x18; // float32
         }
         // Parent: None

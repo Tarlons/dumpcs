@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-06-25 09:17:28.856070300 UTC
+// 2025-07-03 11:16:30.471941500 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
@@ -2163,7 +2163,7 @@ pub mod cs2_dumper {
             pub mod CNmGraphDataSet {
                 pub const m_variationID: usize = 0x0; // CGlobalSymbol
                 pub const m_skeleton: usize = 0x8; // CStrongHandle<InfoForResourceTypeCNmSkeleton>
-                pub const m_resources: usize = 0x10; // CUtlVector<CStrongHandleVoid>
+                pub const m_resources: usize = 0x10; // 
             }
             // Parent: CPathAnimMotorUpdaterBase
             // Field count: 7
@@ -3682,7 +3682,7 @@ pub mod cs2_dumper {
                 pub const m_localMultiSeqDescArray: usize = 0x58; // CUtlVector<CSeqS1SeqDesc>
                 pub const m_localSynthAnimDescArray: usize = 0x70; // CUtlVector<CSeqSynthAnimDesc>
                 pub const m_localCmdSeqDescArray: usize = 0x88; // CUtlVector<CSeqCmdSeqDesc>
-                pub const m_localBoneMaskArray: usize = 0xA0; // CUtlVector<CSeqBoneMaskList>
+                pub const m_localBoneMaskArray: usize = 0xA0; // 
                 pub const m_localScaleSetArray: usize = 0xB8; // CUtlVector<CSeqScaleSet>
                 pub const m_localBoneNameArray: usize = 0xD0; // CUtlVector<CBufferString>
                 pub const m_localNodeName: usize = 0xE8; // CBufferString
@@ -3931,7 +3931,7 @@ pub mod cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             pub mod CAnimReplayFrame {
-                pub const m_inputDataBlocks: usize = 0x10; // CUtlVector<CUtlBinaryBlock>
+                pub const m_inputDataBlocks: usize = 0x10; // 
                 pub const m_instanceData: usize = 0x28; // CUtlBinaryBlock
                 pub const m_startingLocalToWorldTransform: usize = 0x40; // CTransform
                 pub const m_localToWorldTransform: usize = 0x60; // CTransform
@@ -4619,7 +4619,7 @@ pub mod cs2_dumper {
                 pub const m_directHSeqGroup_Handle: usize = 0x90; // CStrongHandle<InfoForResourceTypeCSequenceGroupData>
                 pub const m_decodeKey: usize = 0x98; // CAnimKeyData
                 pub const m_szScripts: usize = 0x110; // CUtlVector<CBufferString>
-                pub const m_AdditionalExtRefs: usize = 0x128; // CUtlVector<CStrongHandleVoid>
+                pub const m_AdditionalExtRefs: usize = 0x128; // 
             }
             // Parent: None
             // Field count: 2
@@ -5373,8 +5373,8 @@ pub mod cs2_dumper {
                 pub const m_nTranslateMotion: usize = 0x1; // int8
                 pub const m_nRotateMotion: usize = 0x2; // int8
                 pub const m_nFlags: usize = 0x3; // int8
-                pub const m_anchor: usize = 0x4; // Vector[2]
-                pub const m_axes: usize = 0x1C; // 
+                pub const m_anchor: usize = 0x4; // 
+                pub const m_axes: usize = 0x1C; // QuaternionStorage[2]
                 pub const m_maxForce: usize = 0x3C; // float32
                 pub const m_maxTorque: usize = 0x40; // float32
                 pub const m_linearLimitValue: usize = 0x44; // float32
@@ -5528,7 +5528,7 @@ pub mod cs2_dumper {
             // MGetKV3ClassDefaults
             pub mod CPoseHandle {
                 pub const m_nIndex: usize = 0x0; // uint16
-                pub const m_eType: usize = 0x2; // 
+                pub const m_eType: usize = 0x2; // PoseType_t
             }
             // Parent: CNmIDValueNode__CDefinition
             // Field count: 2
@@ -5641,8 +5641,8 @@ pub mod cs2_dumper {
                 pub const m_components: usize = 0x48; // CUtlVector<CSmartPtr<CAnimComponentUpdater>>
                 pub const m_pParamListUpdater: usize = 0x60; // CSmartPtr<CAnimParameterManagerUpdater>
                 pub const m_pTagManagerUpdater: usize = 0x68; // CSmartPtr<CAnimTagManagerUpdater>
-                pub const m_scriptManager: usize = 0x70; // 
-                pub const m_settings: usize = 0x78; // 
+                pub const m_scriptManager: usize = 0x70; // CSmartPtr<CAnimScriptManager>
+                pub const m_settings: usize = 0x78; // CAnimGraphSettingsManager
                 pub const m_pStaticPoseCache: usize = 0xA8; // CSmartPtr<CStaticPoseCacheBuilder>
                 pub const m_pSkeleton: usize = 0xB0; // CSmartPtr<CAnimSkeleton>
                 pub const m_rootNodePath: usize = 0xB8; // CAnimNodePath

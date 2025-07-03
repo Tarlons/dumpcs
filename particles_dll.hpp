@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-06-25 09:17:28.856070300 UTC
+// 2025-07-03 11:16:30.471941500 UTC
 
 #pragma once
 
@@ -742,7 +742,7 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_flAlphaScale = 0x218; // float32
                 constexpr std::ptrdiff_t m_nAlpha2Field = 0x21C; // ParticleAttributeIndex_t
                 constexpr std::ptrdiff_t m_vecColorScale = 0x220; // CParticleCollectionVecInput
-                constexpr std::ptrdiff_t m_nColorBlendType = 0x898; // 
+                constexpr std::ptrdiff_t m_nColorBlendType = 0x898; // ParticleColorBlendType_t
                 constexpr std::ptrdiff_t m_flLightDistance = 0x89C; // float32
                 constexpr std::ptrdiff_t m_flStartFalloff = 0x8A0; // float32
                 constexpr std::ptrdiff_t m_flDistanceFalloff = 0x8A4; // float32
@@ -1208,7 +1208,7 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_flRollScale = 0x4D0; // CParticleCollectionRendererFloatInput
                 constexpr std::ptrdiff_t m_nAlpha2Field = 0x630; // ParticleAttributeIndex_t
                 constexpr std::ptrdiff_t m_vecColorScale = 0x638; // CParticleCollectionRendererVecInput
-                constexpr std::ptrdiff_t m_nColorBlendType = 0xCB0; // 
+                constexpr std::ptrdiff_t m_nColorBlendType = 0xCB0; // ParticleColorBlendType_t
                 constexpr std::ptrdiff_t m_nShaderType = 0xCB4; // SpriteCardShaderType_t
                 constexpr std::ptrdiff_t m_strShaderOverride = 0xCB8; // CUtlString
                 constexpr std::ptrdiff_t m_flCenterXOffset = 0xCC0; // CParticleCollectionRendererFloatInput
@@ -1483,7 +1483,7 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_HitboxSetName = 0x848; // char[128]
                 constexpr std::ptrdiff_t m_bUseBones = 0x8C8; // bool
                 constexpr std::ptrdiff_t m_bUseClosestPointOnHitbox = 0x8C9; // bool
-                constexpr std::ptrdiff_t m_nTestType = 0x8CC; // ClosestPointTestType_t
+                constexpr std::ptrdiff_t m_nTestType = 0x8CC; // 
                 constexpr std::ptrdiff_t m_flHybridRatio = 0x8D0; // CParticleCollectionFloatInput
                 constexpr std::ptrdiff_t m_bUpdatePosition = 0xA30; // bool
             }
@@ -2630,7 +2630,7 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_vSortOrigin = 0x40; // Vector
                 constexpr std::ptrdiff_t m_flScale = 0x4C; // float32
                 constexpr std::ptrdiff_t m_hOwner = 0x50; // PARTICLE_EHANDLE__*
-                constexpr std::ptrdiff_t m_pOwningParticleProperty = 0x58; // 
+                constexpr std::ptrdiff_t m_pOwningParticleProperty = 0x58; // CParticleProperty*
                 constexpr std::ptrdiff_t m_flFreezeTransitionStart = 0x70; // float32
                 constexpr std::ptrdiff_t m_flFreezeTransitionDuration = 0x74; // float32
                 constexpr std::ptrdiff_t m_flFreezeTransitionOverride = 0x78; // float32
@@ -4205,7 +4205,7 @@ namespace cs2_dumper {
             namespace C_OP_RenderOmni2Light {
                 constexpr std::ptrdiff_t m_nLightType = 0x210; // ParticleOmni2LightTypeChoiceList_t
                 constexpr std::ptrdiff_t m_vColorBlend = 0x218; // CParticleCollectionVecInput
-                constexpr std::ptrdiff_t m_nColorBlendType = 0x890; // 
+                constexpr std::ptrdiff_t m_nColorBlendType = 0x890; // ParticleColorBlendType_t
                 constexpr std::ptrdiff_t m_nBrightnessUnit = 0x894; // ParticleLightUnitChoiceList_t
                 constexpr std::ptrdiff_t m_flBrightnessLumens = 0x898; // CPerParticleFloatInput
                 constexpr std::ptrdiff_t m_flBrightnessCandelas = 0x9F8; // CPerParticleFloatInput
@@ -4562,7 +4562,7 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_flRadiusScale = 0x210; // CParticleCollectionFloatInput
                 constexpr std::ptrdiff_t m_flAlphaScale = 0x370; // CParticleCollectionFloatInput
                 constexpr std::ptrdiff_t m_vecColorScale = 0x4D0; // CParticleCollectionVecInput
-                constexpr std::ptrdiff_t m_nColorBlendType = 0xB48; // 
+                constexpr std::ptrdiff_t m_nColorBlendType = 0xB48; // ParticleColorBlendType_t
                 constexpr std::ptrdiff_t m_hMaterial = 0xB50; // CStrongHandle<InfoForResourceTypeIMaterial2>
                 constexpr std::ptrdiff_t m_nTextureRepetitionMode = 0xB58; // TextureRepetitionMode_t
                 constexpr std::ptrdiff_t m_flTextureRepeatsPerSegment = 0xB60; // CParticleCollectionFloatInput
@@ -4943,7 +4943,7 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_flRollScale = 0x678; // CParticleCollectionFloatInput
                 constexpr std::ptrdiff_t m_nAlpha2Field = 0x7D8; // ParticleAttributeIndex_t
                 constexpr std::ptrdiff_t m_vecColorScale = 0x7E0; // CParticleCollectionVecInput
-                constexpr std::ptrdiff_t m_nColorBlendType = 0xE58; // 
+                constexpr std::ptrdiff_t m_nColorBlendType = 0xE58; // ParticleColorBlendType_t
             }
             // Parent: CParticleFunctionOperator
             // Field count: 4
@@ -5219,7 +5219,7 @@ namespace cs2_dumper {
             namespace C_OP_RenderStandardLight {
                 constexpr std::ptrdiff_t m_nLightType = 0x210; // ParticleLightTypeChoiceList_t
                 constexpr std::ptrdiff_t m_vecColorScale = 0x218; // CParticleCollectionVecInput
-                constexpr std::ptrdiff_t m_nColorBlendType = 0x890; // 
+                constexpr std::ptrdiff_t m_nColorBlendType = 0x890; // ParticleColorBlendType_t
                 constexpr std::ptrdiff_t m_flIntensity = 0x898; // CParticleCollectionFloatInput
                 constexpr std::ptrdiff_t m_bCastShadows = 0x9F8; // bool
                 constexpr std::ptrdiff_t m_flTheta = 0xA00; // CParticleCollectionFloatInput
@@ -5961,7 +5961,7 @@ namespace cs2_dumper {
             // MGetKV3ClassDefaults
             namespace C_OP_RenderLightBeam {
                 constexpr std::ptrdiff_t m_vColorBlend = 0x210; // CParticleCollectionVecInput
-                constexpr std::ptrdiff_t m_nColorBlendType = 0x888; // 
+                constexpr std::ptrdiff_t m_nColorBlendType = 0x888; // ParticleColorBlendType_t
                 constexpr std::ptrdiff_t m_flBrightnessLumensPerMeter = 0x890; // CParticleCollectionFloatInput
                 constexpr std::ptrdiff_t m_bCastShadows = 0x9F0; // bool
                 constexpr std::ptrdiff_t m_flSkirt = 0x9F8; // CParticleCollectionFloatInput
@@ -6164,7 +6164,7 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_flRollScale = 0x2198; // CParticleCollectionFloatInput
                 constexpr std::ptrdiff_t m_nAlpha2Field = 0x22F8; // ParticleAttributeIndex_t
                 constexpr std::ptrdiff_t m_vecColorScale = 0x2300; // CParticleCollectionVecInput
-                constexpr std::ptrdiff_t m_nColorBlendType = 0x2978; // 
+                constexpr std::ptrdiff_t m_nColorBlendType = 0x2978; // ParticleColorBlendType_t
             }
             // Parent: CParticleFunctionRenderer
             // Field count: 3
@@ -6354,7 +6354,7 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_bKillParticles = 0x4E9; // bool
                 constexpr std::ptrdiff_t m_bDeleteSim = 0x4EA; // bool
                 constexpr std::ptrdiff_t m_nControlPoint = 0x4EC; // int32
-                constexpr std::ptrdiff_t m_nColorBlendType = 0x4F0; // 
+                constexpr std::ptrdiff_t m_nColorBlendType = 0x4F0; // ParticleColorBlendType_t
             }
             // Parent: CGeneralSpin
             // Field count: 0
@@ -6545,7 +6545,7 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_flMaterialOverrideEnabled = 0x238; // CParticleCollectionFloatInput
                 constexpr std::ptrdiff_t m_vecColorScale = 0x398; // CParticleCollectionVecInput
                 constexpr std::ptrdiff_t m_flAlpha = 0xA10; // CPerParticleFloatInput
-                constexpr std::ptrdiff_t m_nColorBlendType = 0xB70; // 
+                constexpr std::ptrdiff_t m_nColorBlendType = 0xB70; // ParticleColorBlendType_t
             }
             // Parent: None
             // Field count: 2

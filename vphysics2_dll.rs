@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-06-25 09:17:28.856070300 UTC
+// 2025-07-03 11:16:30.471941500 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
@@ -57,7 +57,7 @@ pub mod cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             pub mod RnSoftbodyCapsule_t {
-                pub const m_vCenter: usize = 0x0; // Vector[2]
+                pub const m_vCenter: usize = 0x0; // 
                 pub const m_flRadius: usize = 0x18; // float32
                 pub const m_nParticle: usize = 0x1C; // uint16[2]
             }
@@ -121,7 +121,7 @@ pub mod cs2_dumper {
                 pub const m_InitPose: usize = 0x120; // CUtlVector<CTransform>
                 pub const m_Rods: usize = 0x138; // 
                 pub const m_Twists: usize = 0x150; // CUtlVector<FeTwistConstraint_t>
-                pub const m_HingeLimits: usize = 0x168; // CUtlVector<FeHingeLimit_t>
+                pub const m_HingeLimits: usize = 0x168; // 
                 pub const m_AntiTunnelProbes: usize = 0x180; // CUtlVector<FeAntiTunnelProbe_t>
                 pub const m_AntiTunnelTargetNodes: usize = 0x198; // CUtlVector<uint16>
                 pub const m_AxialEdges: usize = 0x1B0; // CUtlVector<FeAxialEdgeBend_t>
@@ -337,7 +337,7 @@ pub mod cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             pub mod RnCapsule_t {
-                pub const m_vCenter: usize = 0x0; // Vector[2]
+                pub const m_vCenter: usize = 0x0; // 
                 pub const m_flRadius: usize = 0x18; // float32
             }
             // Parent: None

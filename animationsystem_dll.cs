@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-06-25 09:17:28.856070300 UTC
+// 2025-07-03 11:16:30.471941500 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: animationsystem.dll
@@ -2066,7 +2066,7 @@ namespace CS2Dumper.Schemas {
         public static class CNmGraphDataSet {
             public const nint m_variationID = 0x0; // CGlobalSymbol
             public const nint m_skeleton = 0x8; // CStrongHandle<InfoForResourceTypeCNmSkeleton>
-            public const nint m_resources = 0x10; // CUtlVector<CStrongHandleVoid>
+            public const nint m_resources = 0x10; // 
         }
         // Parent: CPathAnimMotorUpdaterBase
         // Field count: 7
@@ -3585,7 +3585,7 @@ namespace CS2Dumper.Schemas {
             public const nint m_localMultiSeqDescArray = 0x58; // CUtlVector<CSeqS1SeqDesc>
             public const nint m_localSynthAnimDescArray = 0x70; // CUtlVector<CSeqSynthAnimDesc>
             public const nint m_localCmdSeqDescArray = 0x88; // CUtlVector<CSeqCmdSeqDesc>
-            public const nint m_localBoneMaskArray = 0xA0; // CUtlVector<CSeqBoneMaskList>
+            public const nint m_localBoneMaskArray = 0xA0; // 
             public const nint m_localScaleSetArray = 0xB8; // CUtlVector<CSeqScaleSet>
             public const nint m_localBoneNameArray = 0xD0; // CUtlVector<CBufferString>
             public const nint m_localNodeName = 0xE8; // CBufferString
@@ -3834,7 +3834,7 @@ namespace CS2Dumper.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CAnimReplayFrame {
-            public const nint m_inputDataBlocks = 0x10; // CUtlVector<CUtlBinaryBlock>
+            public const nint m_inputDataBlocks = 0x10; // 
             public const nint m_instanceData = 0x28; // CUtlBinaryBlock
             public const nint m_startingLocalToWorldTransform = 0x40; // CTransform
             public const nint m_localToWorldTransform = 0x60; // CTransform
@@ -4522,7 +4522,7 @@ namespace CS2Dumper.Schemas {
             public const nint m_directHSeqGroup_Handle = 0x90; // CStrongHandle<InfoForResourceTypeCSequenceGroupData>
             public const nint m_decodeKey = 0x98; // CAnimKeyData
             public const nint m_szScripts = 0x110; // CUtlVector<CBufferString>
-            public const nint m_AdditionalExtRefs = 0x128; // CUtlVector<CStrongHandleVoid>
+            public const nint m_AdditionalExtRefs = 0x128; // 
         }
         // Parent: None
         // Field count: 2
@@ -5276,8 +5276,8 @@ namespace CS2Dumper.Schemas {
             public const nint m_nTranslateMotion = 0x1; // int8
             public const nint m_nRotateMotion = 0x2; // int8
             public const nint m_nFlags = 0x3; // int8
-            public const nint m_anchor = 0x4; // Vector[2]
-            public const nint m_axes = 0x1C; // 
+            public const nint m_anchor = 0x4; // 
+            public const nint m_axes = 0x1C; // QuaternionStorage[2]
             public const nint m_maxForce = 0x3C; // float32
             public const nint m_maxTorque = 0x40; // float32
             public const nint m_linearLimitValue = 0x44; // float32
@@ -5431,7 +5431,7 @@ namespace CS2Dumper.Schemas {
         // MGetKV3ClassDefaults
         public static class CPoseHandle {
             public const nint m_nIndex = 0x0; // uint16
-            public const nint m_eType = 0x2; // 
+            public const nint m_eType = 0x2; // PoseType_t
         }
         // Parent: CNmIDValueNode__CDefinition
         // Field count: 2
@@ -5544,8 +5544,8 @@ namespace CS2Dumper.Schemas {
             public const nint m_components = 0x48; // CUtlVector<CSmartPtr<CAnimComponentUpdater>>
             public const nint m_pParamListUpdater = 0x60; // CSmartPtr<CAnimParameterManagerUpdater>
             public const nint m_pTagManagerUpdater = 0x68; // CSmartPtr<CAnimTagManagerUpdater>
-            public const nint m_scriptManager = 0x70; // 
-            public const nint m_settings = 0x78; // 
+            public const nint m_scriptManager = 0x70; // CSmartPtr<CAnimScriptManager>
+            public const nint m_settings = 0x78; // CAnimGraphSettingsManager
             public const nint m_pStaticPoseCache = 0xA8; // CSmartPtr<CStaticPoseCacheBuilder>
             public const nint m_pSkeleton = 0xB0; // CSmartPtr<CAnimSkeleton>
             public const nint m_rootNodePath = 0xB8; // CAnimNodePath

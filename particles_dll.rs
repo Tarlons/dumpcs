@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-06-25 09:17:28.856070300 UTC
+// 2025-07-03 11:16:30.471941500 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
@@ -816,7 +816,7 @@ pub mod cs2_dumper {
                 pub const m_flAlphaScale: usize = 0x218; // float32
                 pub const m_nAlpha2Field: usize = 0x21C; // ParticleAttributeIndex_t
                 pub const m_vecColorScale: usize = 0x220; // CParticleCollectionVecInput
-                pub const m_nColorBlendType: usize = 0x898; // 
+                pub const m_nColorBlendType: usize = 0x898; // ParticleColorBlendType_t
                 pub const m_flLightDistance: usize = 0x89C; // float32
                 pub const m_flStartFalloff: usize = 0x8A0; // float32
                 pub const m_flDistanceFalloff: usize = 0x8A4; // float32
@@ -1282,7 +1282,7 @@ pub mod cs2_dumper {
                 pub const m_flRollScale: usize = 0x4D0; // CParticleCollectionRendererFloatInput
                 pub const m_nAlpha2Field: usize = 0x630; // ParticleAttributeIndex_t
                 pub const m_vecColorScale: usize = 0x638; // CParticleCollectionRendererVecInput
-                pub const m_nColorBlendType: usize = 0xCB0; // 
+                pub const m_nColorBlendType: usize = 0xCB0; // ParticleColorBlendType_t
                 pub const m_nShaderType: usize = 0xCB4; // SpriteCardShaderType_t
                 pub const m_strShaderOverride: usize = 0xCB8; // CUtlString
                 pub const m_flCenterXOffset: usize = 0xCC0; // CParticleCollectionRendererFloatInput
@@ -1557,7 +1557,7 @@ pub mod cs2_dumper {
                 pub const m_HitboxSetName: usize = 0x848; // char[128]
                 pub const m_bUseBones: usize = 0x8C8; // bool
                 pub const m_bUseClosestPointOnHitbox: usize = 0x8C9; // bool
-                pub const m_nTestType: usize = 0x8CC; // ClosestPointTestType_t
+                pub const m_nTestType: usize = 0x8CC; // 
                 pub const m_flHybridRatio: usize = 0x8D0; // CParticleCollectionFloatInput
                 pub const m_bUpdatePosition: usize = 0xA30; // bool
             }
@@ -2704,7 +2704,7 @@ pub mod cs2_dumper {
                 pub const m_vSortOrigin: usize = 0x40; // Vector
                 pub const m_flScale: usize = 0x4C; // float32
                 pub const m_hOwner: usize = 0x50; // PARTICLE_EHANDLE__*
-                pub const m_pOwningParticleProperty: usize = 0x58; // 
+                pub const m_pOwningParticleProperty: usize = 0x58; // CParticleProperty*
                 pub const m_flFreezeTransitionStart: usize = 0x70; // float32
                 pub const m_flFreezeTransitionDuration: usize = 0x74; // float32
                 pub const m_flFreezeTransitionOverride: usize = 0x78; // float32
@@ -4279,7 +4279,7 @@ pub mod cs2_dumper {
             pub mod C_OP_RenderOmni2Light {
                 pub const m_nLightType: usize = 0x210; // ParticleOmni2LightTypeChoiceList_t
                 pub const m_vColorBlend: usize = 0x218; // CParticleCollectionVecInput
-                pub const m_nColorBlendType: usize = 0x890; // 
+                pub const m_nColorBlendType: usize = 0x890; // ParticleColorBlendType_t
                 pub const m_nBrightnessUnit: usize = 0x894; // ParticleLightUnitChoiceList_t
                 pub const m_flBrightnessLumens: usize = 0x898; // CPerParticleFloatInput
                 pub const m_flBrightnessCandelas: usize = 0x9F8; // CPerParticleFloatInput
@@ -4636,7 +4636,7 @@ pub mod cs2_dumper {
                 pub const m_flRadiusScale: usize = 0x210; // CParticleCollectionFloatInput
                 pub const m_flAlphaScale: usize = 0x370; // CParticleCollectionFloatInput
                 pub const m_vecColorScale: usize = 0x4D0; // CParticleCollectionVecInput
-                pub const m_nColorBlendType: usize = 0xB48; // 
+                pub const m_nColorBlendType: usize = 0xB48; // ParticleColorBlendType_t
                 pub const m_hMaterial: usize = 0xB50; // CStrongHandle<InfoForResourceTypeIMaterial2>
                 pub const m_nTextureRepetitionMode: usize = 0xB58; // TextureRepetitionMode_t
                 pub const m_flTextureRepeatsPerSegment: usize = 0xB60; // CParticleCollectionFloatInput
@@ -5017,7 +5017,7 @@ pub mod cs2_dumper {
                 pub const m_flRollScale: usize = 0x678; // CParticleCollectionFloatInput
                 pub const m_nAlpha2Field: usize = 0x7D8; // ParticleAttributeIndex_t
                 pub const m_vecColorScale: usize = 0x7E0; // CParticleCollectionVecInput
-                pub const m_nColorBlendType: usize = 0xE58; // 
+                pub const m_nColorBlendType: usize = 0xE58; // ParticleColorBlendType_t
             }
             // Parent: CParticleFunctionOperator
             // Field count: 4
@@ -5293,7 +5293,7 @@ pub mod cs2_dumper {
             pub mod C_OP_RenderStandardLight {
                 pub const m_nLightType: usize = 0x210; // ParticleLightTypeChoiceList_t
                 pub const m_vecColorScale: usize = 0x218; // CParticleCollectionVecInput
-                pub const m_nColorBlendType: usize = 0x890; // 
+                pub const m_nColorBlendType: usize = 0x890; // ParticleColorBlendType_t
                 pub const m_flIntensity: usize = 0x898; // CParticleCollectionFloatInput
                 pub const m_bCastShadows: usize = 0x9F8; // bool
                 pub const m_flTheta: usize = 0xA00; // CParticleCollectionFloatInput
@@ -6035,7 +6035,7 @@ pub mod cs2_dumper {
             // MGetKV3ClassDefaults
             pub mod C_OP_RenderLightBeam {
                 pub const m_vColorBlend: usize = 0x210; // CParticleCollectionVecInput
-                pub const m_nColorBlendType: usize = 0x888; // 
+                pub const m_nColorBlendType: usize = 0x888; // ParticleColorBlendType_t
                 pub const m_flBrightnessLumensPerMeter: usize = 0x890; // CParticleCollectionFloatInput
                 pub const m_bCastShadows: usize = 0x9F0; // bool
                 pub const m_flSkirt: usize = 0x9F8; // CParticleCollectionFloatInput
@@ -6238,7 +6238,7 @@ pub mod cs2_dumper {
                 pub const m_flRollScale: usize = 0x2198; // CParticleCollectionFloatInput
                 pub const m_nAlpha2Field: usize = 0x22F8; // ParticleAttributeIndex_t
                 pub const m_vecColorScale: usize = 0x2300; // CParticleCollectionVecInput
-                pub const m_nColorBlendType: usize = 0x2978; // 
+                pub const m_nColorBlendType: usize = 0x2978; // ParticleColorBlendType_t
             }
             // Parent: CParticleFunctionRenderer
             // Field count: 3
@@ -6428,7 +6428,7 @@ pub mod cs2_dumper {
                 pub const m_bKillParticles: usize = 0x4E9; // bool
                 pub const m_bDeleteSim: usize = 0x4EA; // bool
                 pub const m_nControlPoint: usize = 0x4EC; // int32
-                pub const m_nColorBlendType: usize = 0x4F0; // 
+                pub const m_nColorBlendType: usize = 0x4F0; // ParticleColorBlendType_t
             }
             // Parent: CGeneralSpin
             // Field count: 0
@@ -6619,7 +6619,7 @@ pub mod cs2_dumper {
                 pub const m_flMaterialOverrideEnabled: usize = 0x238; // CParticleCollectionFloatInput
                 pub const m_vecColorScale: usize = 0x398; // CParticleCollectionVecInput
                 pub const m_flAlpha: usize = 0xA10; // CPerParticleFloatInput
-                pub const m_nColorBlendType: usize = 0xB70; // 
+                pub const m_nColorBlendType: usize = 0xB70; // ParticleColorBlendType_t
             }
             // Parent: None
             // Field count: 2
