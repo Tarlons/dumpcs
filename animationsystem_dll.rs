@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-07-03 11:16:30.471941500 UTC
+// 2025-07-04 06:08:34.677928400 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
@@ -5528,7 +5528,7 @@ pub mod cs2_dumper {
             // MGetKV3ClassDefaults
             pub mod CPoseHandle {
                 pub const m_nIndex: usize = 0x0; // uint16
-                pub const m_eType: usize = 0x2; // PoseType_t
+                pub const m_eType: usize = 0x2; // 
             }
             // Parent: CNmIDValueNode__CDefinition
             // Field count: 2

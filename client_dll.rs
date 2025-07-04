@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-07-03 11:16:30.471941500 UTC
+// 2025-07-04 06:08:34.677928400 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
@@ -894,7 +894,7 @@ pub mod cs2_dumper {
                 pub const m_bReleaseRagdoll: usize = 0xFA4; // bool
                 pub const m_iEyeAttachment: usize = 0xFA5; // AttachmentHandle_t
                 pub const m_bFadingOut: usize = 0xFA6; // bool
-                pub const m_flScaleEnd: usize = 0xFA8; // 
+                pub const m_flScaleEnd: usize = 0xFA8; // float32[10]
                 pub const m_flScaleTimeStart: usize = 0xFD0; // GameTime_t[10]
                 pub const m_flScaleTimeEnd: usize = 0xFF8; // GameTime_t[10]
             }
@@ -1438,7 +1438,7 @@ pub mod cs2_dumper {
             // NetworkVarNames: m_usable (bool)
             // NetworkVarNames: m_szDisplayText (string_t)
             pub mod C_BaseButton {
-                pub const m_glowEntity: usize = 0xD28; // CHandle<C_BaseModelEntity>
+                pub const m_glowEntity: usize = 0xD28; // 
                 pub const m_usable: usize = 0xD2C; // bool
                 pub const m_szDisplayText: usize = 0xD30; // CUtlSymbolLarge
             }
@@ -2685,8 +2685,8 @@ pub mod cs2_dumper {
             // NetworkVarNames: m_hController (CHandle<CBasePlayerController>)
             pub mod C_BasePlayerPawn {
                 pub const m_pWeaponServices: usize = 0x11A8; // 
-                pub const m_pItemServices: usize = 0x11B0; // 
-                pub const m_pAutoaimServices: usize = 0x11B8; // 
+                pub const m_pItemServices: usize = 0x11B0; // CPlayer_ItemServices*
+                pub const m_pAutoaimServices: usize = 0x11B8; // CPlayer_AutoaimServices*
                 pub const m_pObserverServices: usize = 0x11C0; // CPlayer_ObserverServices*
                 pub const m_pWaterServices: usize = 0x11C8; // CPlayer_WaterServices*
                 pub const m_pUseServices: usize = 0x11D0; // CPlayer_UseServices*
@@ -3431,7 +3431,7 @@ pub mod cs2_dumper {
                 pub const m_bNoRamp: usize = 0x107E; // bool
                 pub const m_bStartActive: usize = 0x107F; // bool
                 pub const m_iszEffectName: usize = 0x1080; // CUtlSymbolLarge
-                pub const m_iszControlPointNames: usize = 0x1088; // CUtlSymbolLarge[64]
+                pub const m_iszControlPointNames: usize = 0x1088; // 
                 pub const m_nDataCP: usize = 0x1288; // int32
                 pub const m_vecDataCPValue: usize = 0x128C; // Vector
                 pub const m_nTintCP: usize = 0x1298; // int32
@@ -4347,7 +4347,7 @@ pub mod cs2_dumper {
             // NetworkVarNames: m_bFakeLadder (bool)
             pub mod C_FuncLadder {
                 pub const m_vecLadderDir: usize = 0xD28; // Vector
-                pub const m_Dismounts: usize = 0xD38; // 
+                pub const m_Dismounts: usize = 0xD38; // CUtlVector<CHandle<C_InfoLadderDismount>>
                 pub const m_vecLocalTop: usize = 0xD50; // Vector
                 pub const m_vecPlayerMountPositionTop: usize = 0xD5C; // Vector
                 pub const m_vecPlayerMountPositionBottom: usize = 0xD68; // Vector
@@ -5809,9 +5809,9 @@ pub mod cs2_dumper {
                 pub const m_vecBaseVelocity: usize = 0x430; // Vector
                 pub const m_hEffectEntity: usize = 0x43C; // CHandle<C_BaseEntity>
                 pub const m_hOwnerEntity: usize = 0x440; // CHandle<C_BaseEntity>
-                pub const m_MoveCollide: usize = 0x444; // MoveCollide_t
-                pub const m_MoveType: usize = 0x445; // MoveType_t
-                pub const m_nActualMoveType: usize = 0x446; // MoveType_t
+                pub const m_MoveCollide: usize = 0x444; // 
+                pub const m_MoveType: usize = 0x445; // 
+                pub const m_nActualMoveType: usize = 0x446; // 
                 pub const m_flWaterLevel: usize = 0x448; // float32
                 pub const m_fEffects: usize = 0x44C; // uint32
                 pub const m_hGroundEntity: usize = 0x450; // CHandle<C_BaseEntity>
@@ -6021,7 +6021,7 @@ pub mod cs2_dumper {
             // NetworkVarNames: m_bIsActive (bool)
             pub mod C_EnvScreenOverlay {
                 pub const m_iszOverlayNames: usize = 0x568; // CUtlSymbolLarge[10]
-                pub const m_flOverlayTimes: usize = 0x5B8; // 
+                pub const m_flOverlayTimes: usize = 0x5B8; // float32[10]
                 pub const m_flStartTime: usize = 0x5E0; // GameTime_t
                 pub const m_iDesiredOverlay: usize = 0x5E4; // int32
                 pub const m_bIsActive: usize = 0x5E8; // bool
@@ -6346,7 +6346,7 @@ pub mod cs2_dumper {
                 pub const m_inertiaScale: usize = 0x1118; // float32
                 pub const m_vecDamagePosition: usize = 0x111C; // Vector
                 pub const m_vecDamageDirection: usize = 0x1128; // Vector
-                pub const m_nDamageType: usize = 0x1134; // 
+                pub const m_nDamageType: usize = 0x1134; // DamageTypes_t
             }
             // Parent: C_CSGO_TeamPreviewCamera
             // Field count: 0

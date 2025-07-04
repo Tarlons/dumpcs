@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-07-03 11:16:30.471941500 UTC
+// 2025-07-04 06:08:34.677928400 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: client.dll
@@ -884,7 +884,7 @@ namespace CS2Dumper.Schemas {
             public const nint m_bReleaseRagdoll = 0xFA4; // bool
             public const nint m_iEyeAttachment = 0xFA5; // AttachmentHandle_t
             public const nint m_bFadingOut = 0xFA6; // bool
-            public const nint m_flScaleEnd = 0xFA8; // 
+            public const nint m_flScaleEnd = 0xFA8; // float32[10]
             public const nint m_flScaleTimeStart = 0xFD0; // GameTime_t[10]
             public const nint m_flScaleTimeEnd = 0xFF8; // GameTime_t[10]
         }
@@ -1428,7 +1428,7 @@ namespace CS2Dumper.Schemas {
         // NetworkVarNames: m_usable (bool)
         // NetworkVarNames: m_szDisplayText (string_t)
         public static class C_BaseButton {
-            public const nint m_glowEntity = 0xD28; // CHandle<C_BaseModelEntity>
+            public const nint m_glowEntity = 0xD28; // 
             public const nint m_usable = 0xD2C; // bool
             public const nint m_szDisplayText = 0xD30; // CUtlSymbolLarge
         }
@@ -2675,8 +2675,8 @@ namespace CS2Dumper.Schemas {
         // NetworkVarNames: m_hController (CHandle<CBasePlayerController>)
         public static class C_BasePlayerPawn {
             public const nint m_pWeaponServices = 0x11A8; // 
-            public const nint m_pItemServices = 0x11B0; // 
-            public const nint m_pAutoaimServices = 0x11B8; // 
+            public const nint m_pItemServices = 0x11B0; // CPlayer_ItemServices*
+            public const nint m_pAutoaimServices = 0x11B8; // CPlayer_AutoaimServices*
             public const nint m_pObserverServices = 0x11C0; // CPlayer_ObserverServices*
             public const nint m_pWaterServices = 0x11C8; // CPlayer_WaterServices*
             public const nint m_pUseServices = 0x11D0; // CPlayer_UseServices*
@@ -3421,7 +3421,7 @@ namespace CS2Dumper.Schemas {
             public const nint m_bNoRamp = 0x107E; // bool
             public const nint m_bStartActive = 0x107F; // bool
             public const nint m_iszEffectName = 0x1080; // CUtlSymbolLarge
-            public const nint m_iszControlPointNames = 0x1088; // CUtlSymbolLarge[64]
+            public const nint m_iszControlPointNames = 0x1088; // 
             public const nint m_nDataCP = 0x1288; // int32
             public const nint m_vecDataCPValue = 0x128C; // Vector
             public const nint m_nTintCP = 0x1298; // int32
@@ -4337,7 +4337,7 @@ namespace CS2Dumper.Schemas {
         // NetworkVarNames: m_bFakeLadder (bool)
         public static class C_FuncLadder {
             public const nint m_vecLadderDir = 0xD28; // Vector
-            public const nint m_Dismounts = 0xD38; // 
+            public const nint m_Dismounts = 0xD38; // CUtlVector<CHandle<C_InfoLadderDismount>>
             public const nint m_vecLocalTop = 0xD50; // Vector
             public const nint m_vecPlayerMountPositionTop = 0xD5C; // Vector
             public const nint m_vecPlayerMountPositionBottom = 0xD68; // Vector
@@ -5799,9 +5799,9 @@ namespace CS2Dumper.Schemas {
             public const nint m_vecBaseVelocity = 0x430; // Vector
             public const nint m_hEffectEntity = 0x43C; // CHandle<C_BaseEntity>
             public const nint m_hOwnerEntity = 0x440; // CHandle<C_BaseEntity>
-            public const nint m_MoveCollide = 0x444; // MoveCollide_t
-            public const nint m_MoveType = 0x445; // MoveType_t
-            public const nint m_nActualMoveType = 0x446; // MoveType_t
+            public const nint m_MoveCollide = 0x444; // 
+            public const nint m_MoveType = 0x445; // 
+            public const nint m_nActualMoveType = 0x446; // 
             public const nint m_flWaterLevel = 0x448; // float32
             public const nint m_fEffects = 0x44C; // uint32
             public const nint m_hGroundEntity = 0x450; // CHandle<C_BaseEntity>
@@ -6011,7 +6011,7 @@ namespace CS2Dumper.Schemas {
         // NetworkVarNames: m_bIsActive (bool)
         public static class C_EnvScreenOverlay {
             public const nint m_iszOverlayNames = 0x568; // CUtlSymbolLarge[10]
-            public const nint m_flOverlayTimes = 0x5B8; // 
+            public const nint m_flOverlayTimes = 0x5B8; // float32[10]
             public const nint m_flStartTime = 0x5E0; // GameTime_t
             public const nint m_iDesiredOverlay = 0x5E4; // int32
             public const nint m_bIsActive = 0x5E8; // bool
@@ -6336,7 +6336,7 @@ namespace CS2Dumper.Schemas {
             public const nint m_inertiaScale = 0x1118; // float32
             public const nint m_vecDamagePosition = 0x111C; // Vector
             public const nint m_vecDamageDirection = 0x1128; // Vector
-            public const nint m_nDamageType = 0x1134; // 
+            public const nint m_nDamageType = 0x1134; // DamageTypes_t
         }
         // Parent: C_CSGO_TeamPreviewCamera
         // Field count: 0
