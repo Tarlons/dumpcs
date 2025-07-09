@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-07-04 06:08:34.677928400 UTC
+// 2025-07-09 09:22:57.042877500 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: vphysics2.dll
@@ -114,7 +114,7 @@ namespace CS2Dumper.Schemas {
             public const nint m_SimdRods = 0xF0; // CUtlVector<FeSimdRodConstraint_t>
             public const nint m_SimdRodsAnim = 0x108; // CUtlVector<FeSimdRodConstraintAnim_t>
             public const nint m_InitPose = 0x120; // CUtlVector<CTransform>
-            public const nint m_Rods = 0x138; // 
+            public const nint m_Rods = 0x138; // CUtlVector<FeRodConstraint_t>
             public const nint m_Twists = 0x150; // CUtlVector<FeTwistConstraint_t>
             public const nint m_HingeLimits = 0x168; // 
             public const nint m_AntiTunnelProbes = 0x180; // CUtlVector<FeAntiTunnelProbe_t>

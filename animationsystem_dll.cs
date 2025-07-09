@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-07-04 06:08:34.677928400 UTC
+// 2025-07-09 09:22:57.042877500 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: animationsystem.dll
@@ -2066,7 +2066,7 @@ namespace CS2Dumper.Schemas {
         public static class CNmGraphDataSet {
             public const nint m_variationID = 0x0; // CGlobalSymbol
             public const nint m_skeleton = 0x8; // CStrongHandle<InfoForResourceTypeCNmSkeleton>
-            public const nint m_resources = 0x10; // 
+            public const nint m_resources = 0x10; // CUtlVector<CStrongHandleVoid>
         }
         // Parent: CPathAnimMotorUpdaterBase
         // Field count: 7
@@ -2912,7 +2912,7 @@ namespace CS2Dumper.Schemas {
         // MGetKV3ClassDefaults
         public static class CNmTargetWarpEvent {
             public const nint m_rule = 0x18; // NmTargetWarpRule_t
-            public const nint m_algorithm = 0x19; // 
+            public const nint m_algorithm = 0x19; // NmTargetWarpAlgorithm_t
         }
         // Parent: None
         // Field count: 1
@@ -3584,9 +3584,9 @@ namespace CS2Dumper.Schemas {
             public const nint m_localS1SeqDescArray = 0x40; // CUtlVector<CSeqS1SeqDesc>
             public const nint m_localMultiSeqDescArray = 0x58; // CUtlVector<CSeqS1SeqDesc>
             public const nint m_localSynthAnimDescArray = 0x70; // CUtlVector<CSeqSynthAnimDesc>
-            public const nint m_localCmdSeqDescArray = 0x88; // CUtlVector<CSeqCmdSeqDesc>
+            public const nint m_localCmdSeqDescArray = 0x88; // 
             public const nint m_localBoneMaskArray = 0xA0; // 
-            public const nint m_localScaleSetArray = 0xB8; // CUtlVector<CSeqScaleSet>
+            public const nint m_localScaleSetArray = 0xB8; // 
             public const nint m_localBoneNameArray = 0xD0; // CUtlVector<CBufferString>
             public const nint m_localNodeName = 0xE8; // CBufferString
             public const nint m_localPoseParamArray = 0xF8; // CUtlVector<CSeqPoseParamDesc>
@@ -3834,7 +3834,7 @@ namespace CS2Dumper.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CAnimReplayFrame {
-            public const nint m_inputDataBlocks = 0x10; // 
+            public const nint m_inputDataBlocks = 0x10; // CUtlVector<CUtlBinaryBlock>
             public const nint m_instanceData = 0x28; // CUtlBinaryBlock
             public const nint m_startingLocalToWorldTransform = 0x40; // CTransform
             public const nint m_localToWorldTransform = 0x60; // CTransform
@@ -4522,7 +4522,7 @@ namespace CS2Dumper.Schemas {
             public const nint m_directHSeqGroup_Handle = 0x90; // CStrongHandle<InfoForResourceTypeCSequenceGroupData>
             public const nint m_decodeKey = 0x98; // CAnimKeyData
             public const nint m_szScripts = 0x110; // CUtlVector<CBufferString>
-            public const nint m_AdditionalExtRefs = 0x128; // 
+            public const nint m_AdditionalExtRefs = 0x128; // CUtlVector<CStrongHandleVoid>
         }
         // Parent: None
         // Field count: 2

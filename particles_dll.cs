@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-07-04 06:08:34.677928400 UTC
+// 2025-07-09 09:22:57.042877500 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: particles.dll
@@ -2847,7 +2847,7 @@ namespace CS2Dumper.Schemas {
             public const nint m_bShouldHitboxesFallbackToRenderBounds = 0x30D; // bool
             public const nint m_bShouldHitboxesFallbackToSnapshot = 0x30E; // bool
             public const nint m_bShouldHitboxesFallbackToCollisionHulls = 0x30F; // bool
-            public const nint m_nViewModelEffect = 0x310; // InheritableBoolType_t
+            public const nint m_nViewModelEffect = 0x310; // 
             public const nint m_bScreenSpaceEffect = 0x314; // bool
             public const nint m_pszTargetLayerID = 0x318; // CUtlSymbolLarge
             public const nint m_nSkipRenderControlPoint = 0x320; // int32
@@ -4754,7 +4754,7 @@ namespace CS2Dumper.Schemas {
             public const nint m_InputMagnitude = 0x328; // CPerParticleFloatInput
             public const nint m_nFalloffFunction = 0x488; // 
             public const nint m_InputFalloffExp = 0x490; // CPerParticleFloatInput
-            public const nint m_nImpulseType = 0x5F0; // 
+            public const nint m_nImpulseType = 0x5F0; // ParticleImpulseType_t
         }
         // Parent: CParticleFunctionForce
         // Field count: 3

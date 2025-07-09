@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-07-04 06:08:34.677928400 UTC
+// 2025-07-09 09:22:57.042877500 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
@@ -2926,7 +2926,7 @@ pub mod cs2_dumper {
                 pub const m_bShouldHitboxesFallbackToRenderBounds: usize = 0x30D; // bool
                 pub const m_bShouldHitboxesFallbackToSnapshot: usize = 0x30E; // bool
                 pub const m_bShouldHitboxesFallbackToCollisionHulls: usize = 0x30F; // bool
-                pub const m_nViewModelEffect: usize = 0x310; // InheritableBoolType_t
+                pub const m_nViewModelEffect: usize = 0x310; // 
                 pub const m_bScreenSpaceEffect: usize = 0x314; // bool
                 pub const m_pszTargetLayerID: usize = 0x318; // CUtlSymbolLarge
                 pub const m_nSkipRenderControlPoint: usize = 0x320; // int32
@@ -4833,7 +4833,7 @@ pub mod cs2_dumper {
                 pub const m_InputMagnitude: usize = 0x328; // CPerParticleFloatInput
                 pub const m_nFalloffFunction: usize = 0x488; // 
                 pub const m_InputFalloffExp: usize = 0x490; // CPerParticleFloatInput
-                pub const m_nImpulseType: usize = 0x5F0; // 
+                pub const m_nImpulseType: usize = 0x5F0; // ParticleImpulseType_t
             }
             // Parent: CParticleFunctionForce
             // Field count: 3

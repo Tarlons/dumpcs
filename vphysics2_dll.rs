@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-07-04 06:08:34.677928400 UTC
+// 2025-07-09 09:22:57.042877500 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
@@ -119,7 +119,7 @@ pub mod cs2_dumper {
                 pub const m_SimdRods: usize = 0xF0; // CUtlVector<FeSimdRodConstraint_t>
                 pub const m_SimdRodsAnim: usize = 0x108; // CUtlVector<FeSimdRodConstraintAnim_t>
                 pub const m_InitPose: usize = 0x120; // CUtlVector<CTransform>
-                pub const m_Rods: usize = 0x138; // 
+                pub const m_Rods: usize = 0x138; // CUtlVector<FeRodConstraint_t>
                 pub const m_Twists: usize = 0x150; // CUtlVector<FeTwistConstraint_t>
                 pub const m_HingeLimits: usize = 0x168; // 
                 pub const m_AntiTunnelProbes: usize = 0x180; // CUtlVector<FeAntiTunnelProbe_t>

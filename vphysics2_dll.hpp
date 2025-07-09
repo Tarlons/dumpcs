@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-07-04 06:08:34.677928400 UTC
+// 2025-07-09 09:22:57.042877500 UTC
 
 #pragma once
 
@@ -119,7 +119,7 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_SimdRods = 0xF0; // CUtlVector<FeSimdRodConstraint_t>
                 constexpr std::ptrdiff_t m_SimdRodsAnim = 0x108; // CUtlVector<FeSimdRodConstraintAnim_t>
                 constexpr std::ptrdiff_t m_InitPose = 0x120; // CUtlVector<CTransform>
-                constexpr std::ptrdiff_t m_Rods = 0x138; // 
+                constexpr std::ptrdiff_t m_Rods = 0x138; // CUtlVector<FeRodConstraint_t>
                 constexpr std::ptrdiff_t m_Twists = 0x150; // CUtlVector<FeTwistConstraint_t>
                 constexpr std::ptrdiff_t m_HingeLimits = 0x168; // 
                 constexpr std::ptrdiff_t m_AntiTunnelProbes = 0x180; // CUtlVector<FeAntiTunnelProbe_t>

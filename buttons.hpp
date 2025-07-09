@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-07-04 06:08:34.677928400 UTC
+// 2025-07-09 09:22:57.042877500 UTC
 
 #pragma once
 
@@ -15,14 +15,14 @@ namespace cs2_dumper {
         constexpr std::ptrdiff_t forward = 0x1850B20;
         constexpr std::ptrdiff_t jump = 0x1850DF0;
         constexpr std::ptrdiff_t left = 0x1850C40;
-        constexpr std::ptrdiff_t lookatweapon = 0x1A77020;
+        constexpr std::ptrdiff_t lookatweapon = 0x1A77030;
         constexpr std::ptrdiff_t reload = 0x1850850;
         constexpr std::ptrdiff_t right = 0x1850CD0;
-        constexpr std::ptrdiff_t showscores = 0x1A76F00;
+        constexpr std::ptrdiff_t showscores = 0x1A76F10;
         constexpr std::ptrdiff_t sprint = 0x18507C0;
         constexpr std::ptrdiff_t turnleft = 0x1850A00;
         constexpr std::ptrdiff_t turnright = 0x1850A90;
         constexpr std::ptrdiff_t use = 0x1850D60;
-        constexpr std::ptrdiff_t zoom = 0x1A76F90;
+        constexpr std::ptrdiff_t zoom = 0x1A76FA0;
     }
 }

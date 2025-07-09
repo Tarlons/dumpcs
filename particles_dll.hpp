@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-07-04 06:08:34.677928400 UTC
+// 2025-07-09 09:22:57.042877500 UTC
 
 #pragma once
 
@@ -2852,7 +2852,7 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_bShouldHitboxesFallbackToRenderBounds = 0x30D; // bool
                 constexpr std::ptrdiff_t m_bShouldHitboxesFallbackToSnapshot = 0x30E; // bool
                 constexpr std::ptrdiff_t m_bShouldHitboxesFallbackToCollisionHulls = 0x30F; // bool
-                constexpr std::ptrdiff_t m_nViewModelEffect = 0x310; // InheritableBoolType_t
+                constexpr std::ptrdiff_t m_nViewModelEffect = 0x310; // 
                 constexpr std::ptrdiff_t m_bScreenSpaceEffect = 0x314; // bool
                 constexpr std::ptrdiff_t m_pszTargetLayerID = 0x318; // CUtlSymbolLarge
                 constexpr std::ptrdiff_t m_nSkipRenderControlPoint = 0x320; // int32
@@ -4759,7 +4759,7 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_InputMagnitude = 0x328; // CPerParticleFloatInput
                 constexpr std::ptrdiff_t m_nFalloffFunction = 0x488; // 
                 constexpr std::ptrdiff_t m_InputFalloffExp = 0x490; // CPerParticleFloatInput
-                constexpr std::ptrdiff_t m_nImpulseType = 0x5F0; // 
+                constexpr std::ptrdiff_t m_nImpulseType = 0x5F0; // ParticleImpulseType_t
             }
             // Parent: CParticleFunctionForce
             // Field count: 3

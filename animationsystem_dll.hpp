@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-07-04 06:08:34.677928400 UTC
+// 2025-07-09 09:22:57.042877500 UTC
 
 #pragma once
 
@@ -2071,7 +2071,7 @@ namespace cs2_dumper {
             namespace CNmGraphDataSet {
                 constexpr std::ptrdiff_t m_variationID = 0x0; // CGlobalSymbol
                 constexpr std::ptrdiff_t m_skeleton = 0x8; // CStrongHandle<InfoForResourceTypeCNmSkeleton>
-                constexpr std::ptrdiff_t m_resources = 0x10; // 
+                constexpr std::ptrdiff_t m_resources = 0x10; // CUtlVector<CStrongHandleVoid>
             }
             // Parent: CPathAnimMotorUpdaterBase
             // Field count: 7
@@ -2917,7 +2917,7 @@ namespace cs2_dumper {
             // MGetKV3ClassDefaults
             namespace CNmTargetWarpEvent {
                 constexpr std::ptrdiff_t m_rule = 0x18; // NmTargetWarpRule_t
-                constexpr std::ptrdiff_t m_algorithm = 0x19; // 
+                constexpr std::ptrdiff_t m_algorithm = 0x19; // NmTargetWarpAlgorithm_t
             }
             // Parent: None
             // Field count: 1
@@ -3589,9 +3589,9 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_localS1SeqDescArray = 0x40; // CUtlVector<CSeqS1SeqDesc>
                 constexpr std::ptrdiff_t m_localMultiSeqDescArray = 0x58; // CUtlVector<CSeqS1SeqDesc>
                 constexpr std::ptrdiff_t m_localSynthAnimDescArray = 0x70; // CUtlVector<CSeqSynthAnimDesc>
-                constexpr std::ptrdiff_t m_localCmdSeqDescArray = 0x88; // CUtlVector<CSeqCmdSeqDesc>
+                constexpr std::ptrdiff_t m_localCmdSeqDescArray = 0x88; // 
                 constexpr std::ptrdiff_t m_localBoneMaskArray = 0xA0; // 
-                constexpr std::ptrdiff_t m_localScaleSetArray = 0xB8; // CUtlVector<CSeqScaleSet>
+                constexpr std::ptrdiff_t m_localScaleSetArray = 0xB8; // 
                 constexpr std::ptrdiff_t m_localBoneNameArray = 0xD0; // CUtlVector<CBufferString>
                 constexpr std::ptrdiff_t m_localNodeName = 0xE8; // CBufferString
                 constexpr std::ptrdiff_t m_localPoseParamArray = 0xF8; // CUtlVector<CSeqPoseParamDesc>
@@ -3839,7 +3839,7 @@ namespace cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CAnimReplayFrame {
-                constexpr std::ptrdiff_t m_inputDataBlocks = 0x10; // 
+                constexpr std::ptrdiff_t m_inputDataBlocks = 0x10; // CUtlVector<CUtlBinaryBlock>
                 constexpr std::ptrdiff_t m_instanceData = 0x28; // CUtlBinaryBlock
                 constexpr std::ptrdiff_t m_startingLocalToWorldTransform = 0x40; // CTransform
                 constexpr std::ptrdiff_t m_localToWorldTransform = 0x60; // CTransform
@@ -4527,7 +4527,7 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_directHSeqGroup_Handle = 0x90; // CStrongHandle<InfoForResourceTypeCSequenceGroupData>
                 constexpr std::ptrdiff_t m_decodeKey = 0x98; // CAnimKeyData
                 constexpr std::ptrdiff_t m_szScripts = 0x110; // CUtlVector<CBufferString>
-                constexpr std::ptrdiff_t m_AdditionalExtRefs = 0x128; // 
+                constexpr std::ptrdiff_t m_AdditionalExtRefs = 0x128; // CUtlVector<CStrongHandleVoid>
             }
             // Parent: None
             // Field count: 2
