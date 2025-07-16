@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-07-09 09:22:57.042877500 UTC
+// 2025-07-16 20:34:54.131177500 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
@@ -456,7 +456,7 @@ pub mod cs2_dumper {
                 pub const m_nDecalsAdded: usize = 0xAB0; // int32
                 pub const m_iOldHealth: usize = 0xAB4; // int32
                 pub const m_nRenderMode: usize = 0xAB8; // 
-                pub const m_nRenderFX: usize = 0xAB9; // RenderFx_t
+                pub const m_nRenderFX: usize = 0xAB9; // 
                 pub const m_bAllowFadeInView: usize = 0xABA; // bool
                 pub const m_clrRender: usize = 0xAD8; // Color
                 pub const m_vecRenderAttributes: usize = 0xAE0; // C_UtlVectorEmbeddedNetworkVar<EntityRenderAttribute_t>
@@ -1306,8 +1306,8 @@ pub mod cs2_dumper {
                 pub const m_vecStashedGrenadeThrowPosition: usize = 0x2454; // Vector
                 pub const m_vecStashedVelocity: usize = 0x2460; // Vector
                 pub const m_angShootAngleHistory: usize = 0x246C; // QAngle[2]
-                pub const m_vecThrowPositionHistory: usize = 0x2484; // 
-                pub const m_vecVelocityHistory: usize = 0x249C; // 
+                pub const m_vecThrowPositionHistory: usize = 0x2484; // Vector[2]
+                pub const m_vecVelocityHistory: usize = 0x249C; // Vector[2]
                 pub const m_PredictedDamageTags: usize = 0x24B8; // C_UtlVectorEmbeddedNetworkVar<PredictedDamageTag_t>
                 pub const m_nPrevHighestReceivedDamageTagTick: usize = 0x2508; // GameTick_t
                 pub const m_nHighestAppliedDamageTagTick: usize = 0x250C; // int32
@@ -1596,7 +1596,7 @@ pub mod cs2_dumper {
             // NetworkVarNames: m_szTeamname (char)
             pub mod C_Team {
                 pub const m_aPlayerControllers: usize = 0x568; // C_NetworkUtlVectorBase<CHandle<CBasePlayerController>>
-                pub const m_aPlayers: usize = 0x580; // C_NetworkUtlVectorBase<CHandle<C_BasePlayerPawn>>
+                pub const m_aPlayers: usize = 0x580; // 
                 pub const m_iScore: usize = 0x598; // int32
                 pub const m_szTeamname: usize = 0x59C; // char[129]
             }
@@ -2829,7 +2829,7 @@ pub mod cs2_dumper {
                 pub const m_fPrevLockedPoints: usize = 0xD3C; // int32
                 pub const m_iForcePointMoveCounter: usize = 0xD40; // int32
                 pub const m_bPrevEndPointPos: usize = 0xD44; // bool[2]
-                pub const m_vPrevEndPointPos: usize = 0xD48; // 
+                pub const m_vPrevEndPointPos: usize = 0xD48; // Vector[2]
                 pub const m_flCurScroll: usize = 0xD60; // float32
                 pub const m_flScrollSpeed: usize = 0xD64; // float32
                 pub const m_RopeFlags: usize = 0xD68; // uint16
@@ -2857,7 +2857,7 @@ pub mod cs2_dumper {
                 pub const m_flTimeToNextGust: usize = 0x10BC; // float32
                 pub const m_vWindDir: usize = 0x10C0; // Vector
                 pub const m_vColorMod: usize = 0x10CC; // Vector
-                pub const m_vCachedEndPointAttachmentPos: usize = 0x10D8; // 
+                pub const m_vCachedEndPointAttachmentPos: usize = 0x10D8; // Vector[2]
                 pub const m_vCachedEndPointAttachmentAngle: usize = 0x10F0; // QAngle[2]
                 pub const m_bConstrainBetweenEndpoints: usize = 0x1108; // bool
                 pub const m_bEndPointAttachmentPositionsDirty: usize = 0x0; // bitfield:1
@@ -3425,7 +3425,7 @@ pub mod cs2_dumper {
                 pub const m_flPreSimTime: usize = 0xF44; // float32
                 pub const m_vServerControlPoints: usize = 0xF48; // Vector[4]
                 pub const m_iServerControlPointAssignments: usize = 0xF78; // uint8[4]
-                pub const m_hControlPointEnts: usize = 0xF7C; // CHandle<C_BaseEntity>[64]
+                pub const m_hControlPointEnts: usize = 0xF7C; // 
                 pub const m_bNoSave: usize = 0x107C; // bool
                 pub const m_bNoFreeze: usize = 0x107D; // bool
                 pub const m_bNoRamp: usize = 0x107E; // bool
@@ -4370,8 +4370,8 @@ pub mod cs2_dumper {
             // NetworkVarNames: m_iAmmo (uint16)
             pub mod CPlayer_WeaponServices {
                 pub const m_hMyWeapons: usize = 0x40; // C_NetworkUtlVectorBase<CHandle<C_BasePlayerWeapon>>
-                pub const m_hActiveWeapon: usize = 0x58; // 
-                pub const m_hLastWeapon: usize = 0x5C; // 
+                pub const m_hActiveWeapon: usize = 0x58; // CHandle<C_BasePlayerWeapon>
+                pub const m_hLastWeapon: usize = 0x5C; // CHandle<C_BasePlayerWeapon>
                 pub const m_iAmmo: usize = 0x60; // uint16[32]
             }
             // Parent: None
@@ -4664,7 +4664,7 @@ pub mod cs2_dumper {
             // NetworkVarNames: m_weaponPurchasesThisMatch (WeaponPurchaseTracker_t)
             // NetworkVarNames: m_weaponPurchasesThisRound (WeaponPurchaseTracker_t)
             pub mod CCSPlayer_ActionTrackingServices {
-                pub const m_hLastWeaponBeforeC4AutoSwitch: usize = 0x40; // 
+                pub const m_hLastWeaponBeforeC4AutoSwitch: usize = 0x40; // CHandle<C_BasePlayerWeapon>
                 pub const m_bIsRescuing: usize = 0x44; // bool
                 pub const m_weaponPurchasesThisMatch: usize = 0x48; // WeaponPurchaseTracker_t
                 pub const m_weaponPurchasesThisRound: usize = 0xA0; // WeaponPurchaseTracker_t
@@ -5969,7 +5969,7 @@ pub mod cs2_dumper {
                 pub const m_nHaloIndex: usize = 0xD68; // CStrongHandle<InfoForResourceTypeIMaterial2>
                 pub const m_nBeamType: usize = 0xD70; // BeamType_t
                 pub const m_nBeamFlags: usize = 0xD74; // uint32
-                pub const m_hAttachEntity: usize = 0xD78; // 
+                pub const m_hAttachEntity: usize = 0xD78; // CHandle<C_BaseEntity>[10]
                 pub const m_nAttachIndex: usize = 0xDA0; // AttachmentHandle_t[10]
                 pub const m_fWidth: usize = 0xDAC; // float32
                 pub const m_fEndWidth: usize = 0xDB0; // float32
@@ -6488,7 +6488,7 @@ pub mod cs2_dumper {
                 pub const m_nViewModelIndex: usize = 0xF9C; // uint32
                 pub const m_nAnimationParity: usize = 0xFA0; // uint32
                 pub const m_flAnimationStartTime: usize = 0xFA4; // float32
-                pub const m_hWeapon: usize = 0xFA8; // 
+                pub const m_hWeapon: usize = 0xFA8; // CHandle<C_BasePlayerWeapon>
                 pub const m_sVMName: usize = 0xFB0; // CUtlSymbolLarge
                 pub const m_sAnimationPrefix: usize = 0xFB8; // CUtlSymbolLarge
                 pub const m_iCameraAttachment: usize = 0xFC0; // AttachmentHandle_t

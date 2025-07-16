@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-07-09 09:22:57.042877500 UTC
+// 2025-07-16 20:34:54.131177500 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: vphysics2.dll
@@ -52,7 +52,7 @@ namespace CS2Dumper.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class RnSoftbodyCapsule_t {
-            public const nint m_vCenter = 0x0; // 
+            public const nint m_vCenter = 0x0; // Vector[2]
             public const nint m_flRadius = 0x18; // float32
             public const nint m_nParticle = 0x1C; // uint16[2]
         }
@@ -332,7 +332,7 @@ namespace CS2Dumper.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class RnCapsule_t {
-            public const nint m_vCenter = 0x0; // 
+            public const nint m_vCenter = 0x0; // Vector[2]
             public const nint m_flRadius = 0x18; // float32
         }
         // Parent: None

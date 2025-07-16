@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-07-09 09:22:57.042877500 UTC
+// 2025-07-16 20:34:54.131177500 UTC
 
 #pragma once
 
@@ -57,7 +57,7 @@ namespace cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             namespace RnSoftbodyCapsule_t {
-                constexpr std::ptrdiff_t m_vCenter = 0x0; // 
+                constexpr std::ptrdiff_t m_vCenter = 0x0; // Vector[2]
                 constexpr std::ptrdiff_t m_flRadius = 0x18; // float32
                 constexpr std::ptrdiff_t m_nParticle = 0x1C; // uint16[2]
             }
@@ -337,7 +337,7 @@ namespace cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             namespace RnCapsule_t {
-                constexpr std::ptrdiff_t m_vCenter = 0x0; // 
+                constexpr std::ptrdiff_t m_vCenter = 0x0; // Vector[2]
                 constexpr std::ptrdiff_t m_flRadius = 0x18; // float32
             }
             // Parent: None

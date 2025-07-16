@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-07-09 09:22:57.042877500 UTC
+// 2025-07-16 20:34:54.131177500 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
@@ -6516,7 +6516,7 @@ pub mod cs2_dumper {
                 pub const m_flLightingDirectionality: usize = 0x3490; // CParticleCollectionRendererFloatInput
                 pub const m_bParticleShadows: usize = 0x35F0; // bool
                 pub const m_flShadowDensity: usize = 0x35F4; // float32
-                pub const m_replicationParameters: usize = 0x35F8; // CReplicationParameters
+                pub const m_replicationParameters: usize = 0x35F8; // 
             }
             // Parent: CParticleFunctionOperator
             // Field count: 12
