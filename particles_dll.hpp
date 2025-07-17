@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-07-16 20:34:54.131177500 UTC
+// 2025-07-17 10:10:58.668805600 UTC
 
 #pragma once
 
@@ -6442,7 +6442,7 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_flLightingDirectionality = 0x3490; // CParticleCollectionRendererFloatInput
                 constexpr std::ptrdiff_t m_bParticleShadows = 0x35F0; // bool
                 constexpr std::ptrdiff_t m_flShadowDensity = 0x35F4; // float32
-                constexpr std::ptrdiff_t m_replicationParameters = 0x35F8; // 
+                constexpr std::ptrdiff_t m_replicationParameters = 0x35F8; // CReplicationParameters
             }
             // Parent: CParticleFunctionOperator
             // Field count: 12

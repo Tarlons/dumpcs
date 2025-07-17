@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-07-16 20:34:54.131177500 UTC
+// 2025-07-17 10:10:58.668805600 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: server.dll
@@ -2697,7 +2697,7 @@ namespace CS2Dumper.Schemas {
         // Field count: 2
         public static class CSkyboxReference {
             public const nint m_worldGroupId = 0x4E0; // WorldGroupId_t
-            public const nint m_hSkyCamera = 0x4E4; // CHandle<CSkyCamera>
+            public const nint m_hSkyCamera = 0x4E4; // 
         }
         // Parent: CBasePropDoor
         // Field count: 17
@@ -3028,7 +3028,7 @@ namespace CS2Dumper.Schemas {
         public static class CFilterMultiple {
             public const nint m_nFilterType = 0x538; // filter_t
             public const nint m_iFilterName = 0x540; // CUtlSymbolLarge[10]
-            public const nint m_hFilter = 0x590; // CHandle<CBaseEntity>[10]
+            public const nint m_hFilter = 0x590; // 
             public const nint m_nFilterCount = 0x5B8; // int32
         }
         // Parent: CPlayerPawnComponent
@@ -3746,7 +3746,7 @@ namespace CS2Dumper.Schemas {
         // NetworkVarNames: m_flSeqFixedCycle (float)
         // NetworkVarNames: m_nAnimLoopMode (AnimLoopMode_t)
         public static class CBaseAnimGraphController {
-            public const nint m_animGraphNetworkedVars = 0x18; // 
+            public const nint m_animGraphNetworkedVars = 0x18; // CAnimGraphNetworkedVariables
             public const nint m_bSequenceFinished = 0x220; // bool
             public const nint m_flSoundSyncTime = 0x224; // float32
             public const nint m_nActiveIKChainMask = 0x228; // uint32
@@ -6139,7 +6139,7 @@ namespace CS2Dumper.Schemas {
             public const nint m_bOverrideWithEvent = 0x518; // bool
             public const nint m_soundscapeIndex = 0x51C; // int32
             public const nint m_soundscapeEntityListId = 0x520; // int32
-            public const nint m_positionNames = 0x528; // 
+            public const nint m_positionNames = 0x528; // CUtlSymbolLarge[8]
             public const nint m_hProxySoundscape = 0x568; // CHandle<CEnvSoundscape>
             public const nint m_bDisabled = 0x56C; // bool
             public const nint m_soundscapeName = 0x570; // CUtlSymbolLarge
@@ -6215,7 +6215,7 @@ namespace CS2Dumper.Schemas {
         // Field count: 4
         public static class CPhysPulley {
             public const nint m_position2 = 0x558; // Vector
-            public const nint m_offset = 0x564; // Vector[2]
+            public const nint m_offset = 0x564; // 
             public const nint m_addLength = 0x57C; // float32
             public const nint m_gearRatio = 0x580; // float32
         }
@@ -6581,7 +6581,7 @@ namespace CS2Dumper.Schemas {
             public const nint m_nHaloIndex = 0x7B0; // CStrongHandle<InfoForResourceTypeIMaterial2>
             public const nint m_nBeamType = 0x7B8; // BeamType_t
             public const nint m_nBeamFlags = 0x7BC; // uint32
-            public const nint m_hAttachEntity = 0x7C0; // CHandle<CBaseEntity>[10]
+            public const nint m_hAttachEntity = 0x7C0; // 
             public const nint m_nAttachIndex = 0x7E8; // AttachmentHandle_t[10]
             public const nint m_fWidth = 0x7F4; // float32
             public const nint m_fEndWidth = 0x7F8; // float32
@@ -7185,7 +7185,7 @@ namespace CS2Dumper.Schemas {
             public const nint m_PathNodes_Position = 0x530; // CNetworkUtlVectorBase<Vector>
             public const nint m_PathNodes_TangentIn = 0x548; // CNetworkUtlVectorBase<Vector>
             public const nint m_PathNodes_TangentOut = 0x560; // CNetworkUtlVectorBase<Vector>
-            public const nint m_PathNodes_Color = 0x578; // CNetworkUtlVectorBase<Vector>
+            public const nint m_PathNodes_Color = 0x578; // 
             public const nint m_PathNodes_PinEnabled = 0x590; // 
             public const nint m_PathNodes_RadiusScale = 0x5A8; // CNetworkUtlVectorBase<float32>
         }
@@ -8207,7 +8207,7 @@ namespace CS2Dumper.Schemas {
         // Parent: CPhysConstraint
         // Field count: 6
         public static class CPhysLength {
-            public const nint m_offset = 0x558; // Vector[2]
+            public const nint m_offset = 0x558; // 
             public const nint m_vecAttach = 0x570; // Vector
             public const nint m_addLength = 0x57C; // float32
             public const nint m_minLength = 0x580; // float32
@@ -9947,8 +9947,8 @@ namespace CS2Dumper.Schemas {
             public const nint m_vecStashedGrenadeThrowPosition = 0x1A6C; // Vector
             public const nint m_vecStashedVelocity = 0x1A78; // Vector
             public const nint m_angShootAngleHistory = 0x1A84; // QAngle[2]
-            public const nint m_vecThrowPositionHistory = 0x1A9C; // Vector[2]
-            public const nint m_vecVelocityHistory = 0x1AB4; // Vector[2]
+            public const nint m_vecThrowPositionHistory = 0x1A9C; // 
+            public const nint m_vecVelocityHistory = 0x1AB4; // 
             public const nint m_PredictedDamageTags = 0x1AD0; // CUtlVectorEmbeddedNetworkVar<PredictedDamageTag_t>
             public const nint m_nHighestAppliedDamageTagTick = 0x1B20; // int32
         }
@@ -10861,7 +10861,7 @@ namespace CS2Dumper.Schemas {
         // MNetworkIncludeByName
         // MNetworkOverride
         public static class CFuncMoveLinear {
-            public const nint m_authoredPosition = 0x810; // 
+            public const nint m_authoredPosition = 0x810; // MoveLinearAuthoredPos_t
             public const nint m_angMoveEntitySpace = 0x814; // QAngle
             public const nint m_vecMoveDirParentSpace = 0x820; // Vector
             public const nint m_soundStart = 0x830; // CUtlSymbolLarge

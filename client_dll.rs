@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-07-16 20:34:54.131177500 UTC
+// 2025-07-17 10:10:58.668805600 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
@@ -1306,8 +1306,8 @@ pub mod cs2_dumper {
                 pub const m_vecStashedGrenadeThrowPosition: usize = 0x2454; // Vector
                 pub const m_vecStashedVelocity: usize = 0x2460; // Vector
                 pub const m_angShootAngleHistory: usize = 0x246C; // QAngle[2]
-                pub const m_vecThrowPositionHistory: usize = 0x2484; // Vector[2]
-                pub const m_vecVelocityHistory: usize = 0x249C; // Vector[2]
+                pub const m_vecThrowPositionHistory: usize = 0x2484; // 
+                pub const m_vecVelocityHistory: usize = 0x249C; // 
                 pub const m_PredictedDamageTags: usize = 0x24B8; // C_UtlVectorEmbeddedNetworkVar<PredictedDamageTag_t>
                 pub const m_nPrevHighestReceivedDamageTagTick: usize = 0x2508; // GameTick_t
                 pub const m_nHighestAppliedDamageTagTick: usize = 0x250C; // int32
@@ -2490,7 +2490,7 @@ pub mod cs2_dumper {
                 pub const m_bStartActive: usize = 0x570; // bool
                 pub const m_flMaxSimulationTime: usize = 0x574; // float32
                 pub const m_iszEffectName: usize = 0x578; // CUtlSymbolLarge
-                pub const m_PathNodes_Name: usize = 0x580; // 
+                pub const m_PathNodes_Name: usize = 0x580; // CUtlVector<CUtlSymbolLarge>
                 pub const m_flParticleSpacing: usize = 0x598; // float32
                 pub const m_flSlack: usize = 0x59C; // float32
                 pub const m_flRadius: usize = 0x5A0; // float32
@@ -2686,10 +2686,10 @@ pub mod cs2_dumper {
             pub mod C_BasePlayerPawn {
                 pub const m_pWeaponServices: usize = 0x11A8; // CPlayer_WeaponServices*
                 pub const m_pItemServices: usize = 0x11B0; // CPlayer_ItemServices*
-                pub const m_pAutoaimServices: usize = 0x11B8; // CPlayer_AutoaimServices*
+                pub const m_pAutoaimServices: usize = 0x11B8; // 
                 pub const m_pObserverServices: usize = 0x11C0; // 
                 pub const m_pWaterServices: usize = 0x11C8; // 
-                pub const m_pUseServices: usize = 0x11D0; // 
+                pub const m_pUseServices: usize = 0x11D0; // CPlayer_UseServices*
                 pub const m_pFlashlightServices: usize = 0x11D8; // CPlayer_FlashlightServices*
                 pub const m_pCameraServices: usize = 0x11E0; // CPlayer_CameraServices*
                 pub const m_pMovementServices: usize = 0x11E8; // CPlayer_MovementServices*
@@ -2829,7 +2829,7 @@ pub mod cs2_dumper {
                 pub const m_fPrevLockedPoints: usize = 0xD3C; // int32
                 pub const m_iForcePointMoveCounter: usize = 0xD40; // int32
                 pub const m_bPrevEndPointPos: usize = 0xD44; // bool[2]
-                pub const m_vPrevEndPointPos: usize = 0xD48; // Vector[2]
+                pub const m_vPrevEndPointPos: usize = 0xD48; // 
                 pub const m_flCurScroll: usize = 0xD60; // float32
                 pub const m_flScrollSpeed: usize = 0xD64; // float32
                 pub const m_RopeFlags: usize = 0xD68; // uint16
@@ -2857,7 +2857,7 @@ pub mod cs2_dumper {
                 pub const m_flTimeToNextGust: usize = 0x10BC; // float32
                 pub const m_vWindDir: usize = 0x10C0; // Vector
                 pub const m_vColorMod: usize = 0x10CC; // Vector
-                pub const m_vCachedEndPointAttachmentPos: usize = 0x10D8; // Vector[2]
+                pub const m_vCachedEndPointAttachmentPos: usize = 0x10D8; // 
                 pub const m_vCachedEndPointAttachmentAngle: usize = 0x10F0; // QAngle[2]
                 pub const m_bConstrainBetweenEndpoints: usize = 0x1108; // bool
                 pub const m_bEndPointAttachmentPositionsDirty: usize = 0x0; // bitfield:1
@@ -3425,7 +3425,7 @@ pub mod cs2_dumper {
                 pub const m_flPreSimTime: usize = 0xF44; // float32
                 pub const m_vServerControlPoints: usize = 0xF48; // Vector[4]
                 pub const m_iServerControlPointAssignments: usize = 0xF78; // uint8[4]
-                pub const m_hControlPointEnts: usize = 0xF7C; // 
+                pub const m_hControlPointEnts: usize = 0xF7C; // CHandle<C_BaseEntity>[64]
                 pub const m_bNoSave: usize = 0x107C; // bool
                 pub const m_bNoFreeze: usize = 0x107D; // bool
                 pub const m_bNoRamp: usize = 0x107E; // bool
@@ -3996,7 +3996,7 @@ pub mod cs2_dumper {
                 pub const m_bOverrideWithEvent: usize = 0x5A0; // bool
                 pub const m_soundscapeIndex: usize = 0x5A4; // int32
                 pub const m_soundscapeEntityListId: usize = 0x5A8; // int32
-                pub const m_positionNames: usize = 0x5B0; // 
+                pub const m_positionNames: usize = 0x5B0; // CUtlSymbolLarge[8]
                 pub const m_hProxySoundscape: usize = 0x5F0; // CHandle<CEnvSoundscape>
                 pub const m_bDisabled: usize = 0x5F4; // bool
                 pub const m_soundscapeName: usize = 0x5F8; // CUtlSymbolLarge
@@ -4347,7 +4347,7 @@ pub mod cs2_dumper {
             // NetworkVarNames: m_bFakeLadder (bool)
             pub mod C_FuncLadder {
                 pub const m_vecLadderDir: usize = 0xD28; // Vector
-                pub const m_Dismounts: usize = 0xD38; // CUtlVector<CHandle<C_InfoLadderDismount>>
+                pub const m_Dismounts: usize = 0xD38; // 
                 pub const m_vecLocalTop: usize = 0xD50; // Vector
                 pub const m_vecPlayerMountPositionTop: usize = 0xD5C; // Vector
                 pub const m_vecPlayerMountPositionBottom: usize = 0xD68; // Vector

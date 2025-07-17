@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-07-16 20:34:54.131177500 UTC
+// 2025-07-17 10:10:58.668805600 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: animationsystem.dll
@@ -2634,7 +2634,7 @@ namespace CS2Dumper.Schemas {
             public const nint m_nFlags = 0x0; // uint32
             public const nint m_nParent = 0x4; // uint16
             public const nint m_nChild = 0x6; // uint16
-            public const nint m_params = 0x8; // 
+            public const nint m_params = 0x8; // VPhysXConstraintParams_t
         }
         // Parent: None
         // Field count: 6
@@ -3021,7 +3021,7 @@ namespace CS2Dumper.Schemas {
             public const nint m_sourceStateNodeIdx = 0x10; // int16
             public const nint m_nInputValueNodeIdx = 0x12; // int16
             public const nint m_flComparand = 0x14; // float32
-            public const nint m_type = 0x18; // CNmTimeConditionNode::ComparisonType_t
+            public const nint m_type = 0x18; // 
             public const nint m_operator = 0x19; // CNmTimeConditionNode::Operator_t
         }
         // Parent: CNmBoolValueNode__CDefinition
@@ -5276,7 +5276,7 @@ namespace CS2Dumper.Schemas {
             public const nint m_nTranslateMotion = 0x1; // int8
             public const nint m_nRotateMotion = 0x2; // int8
             public const nint m_nFlags = 0x3; // int8
-            public const nint m_anchor = 0x4; // Vector[2]
+            public const nint m_anchor = 0x4; // 
             public const nint m_axes = 0x1C; // QuaternionStorage[2]
             public const nint m_maxForce = 0x3C; // float32
             public const nint m_maxTorque = 0x40; // float32
@@ -5431,7 +5431,7 @@ namespace CS2Dumper.Schemas {
         // MGetKV3ClassDefaults
         public static class CPoseHandle {
             public const nint m_nIndex = 0x0; // uint16
-            public const nint m_eType = 0x2; // 
+            public const nint m_eType = 0x2; // PoseType_t
         }
         // Parent: CNmIDValueNode__CDefinition
         // Field count: 2
@@ -5515,7 +5515,7 @@ namespace CS2Dumper.Schemas {
         public static class TwoBoneIKSettings_t {
             public const nint m_endEffectorType = 0x0; // IkEndEffectorType
             public const nint m_endEffectorAttachment = 0x10; // CAnimAttachment
-            public const nint m_targetType = 0x90; // 
+            public const nint m_targetType = 0x90; // IkTargetType
             public const nint m_targetAttachment = 0xA0; // CAnimAttachment
             public const nint m_targetBoneIndex = 0x120; // int32
             public const nint m_hPositionParam = 0x124; // CAnimParamHandle

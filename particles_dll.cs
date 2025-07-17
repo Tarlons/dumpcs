@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-07-16 20:34:54.131177500 UTC
+// 2025-07-17 10:10:58.668805600 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: particles.dll
@@ -6437,7 +6437,7 @@ namespace CS2Dumper.Schemas {
             public const nint m_flLightingDirectionality = 0x3490; // CParticleCollectionRendererFloatInput
             public const nint m_bParticleShadows = 0x35F0; // bool
             public const nint m_flShadowDensity = 0x35F4; // float32
-            public const nint m_replicationParameters = 0x35F8; // 
+            public const nint m_replicationParameters = 0x35F8; // CReplicationParameters
         }
         // Parent: CParticleFunctionOperator
         // Field count: 12

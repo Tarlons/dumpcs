@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-07-16 20:34:54.131177500 UTC
+// 2025-07-17 10:10:58.668805600 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: client.dll
@@ -1296,8 +1296,8 @@ namespace CS2Dumper.Schemas {
             public const nint m_vecStashedGrenadeThrowPosition = 0x2454; // Vector
             public const nint m_vecStashedVelocity = 0x2460; // Vector
             public const nint m_angShootAngleHistory = 0x246C; // QAngle[2]
-            public const nint m_vecThrowPositionHistory = 0x2484; // Vector[2]
-            public const nint m_vecVelocityHistory = 0x249C; // Vector[2]
+            public const nint m_vecThrowPositionHistory = 0x2484; // 
+            public const nint m_vecVelocityHistory = 0x249C; // 
             public const nint m_PredictedDamageTags = 0x24B8; // C_UtlVectorEmbeddedNetworkVar<PredictedDamageTag_t>
             public const nint m_nPrevHighestReceivedDamageTagTick = 0x2508; // GameTick_t
             public const nint m_nHighestAppliedDamageTagTick = 0x250C; // int32
@@ -2480,7 +2480,7 @@ namespace CS2Dumper.Schemas {
             public const nint m_bStartActive = 0x570; // bool
             public const nint m_flMaxSimulationTime = 0x574; // float32
             public const nint m_iszEffectName = 0x578; // CUtlSymbolLarge
-            public const nint m_PathNodes_Name = 0x580; // 
+            public const nint m_PathNodes_Name = 0x580; // CUtlVector<CUtlSymbolLarge>
             public const nint m_flParticleSpacing = 0x598; // float32
             public const nint m_flSlack = 0x59C; // float32
             public const nint m_flRadius = 0x5A0; // float32
@@ -2676,10 +2676,10 @@ namespace CS2Dumper.Schemas {
         public static class C_BasePlayerPawn {
             public const nint m_pWeaponServices = 0x11A8; // CPlayer_WeaponServices*
             public const nint m_pItemServices = 0x11B0; // CPlayer_ItemServices*
-            public const nint m_pAutoaimServices = 0x11B8; // CPlayer_AutoaimServices*
+            public const nint m_pAutoaimServices = 0x11B8; // 
             public const nint m_pObserverServices = 0x11C0; // 
             public const nint m_pWaterServices = 0x11C8; // 
-            public const nint m_pUseServices = 0x11D0; // 
+            public const nint m_pUseServices = 0x11D0; // CPlayer_UseServices*
             public const nint m_pFlashlightServices = 0x11D8; // CPlayer_FlashlightServices*
             public const nint m_pCameraServices = 0x11E0; // CPlayer_CameraServices*
             public const nint m_pMovementServices = 0x11E8; // CPlayer_MovementServices*
@@ -2819,7 +2819,7 @@ namespace CS2Dumper.Schemas {
             public const nint m_fPrevLockedPoints = 0xD3C; // int32
             public const nint m_iForcePointMoveCounter = 0xD40; // int32
             public const nint m_bPrevEndPointPos = 0xD44; // bool[2]
-            public const nint m_vPrevEndPointPos = 0xD48; // Vector[2]
+            public const nint m_vPrevEndPointPos = 0xD48; // 
             public const nint m_flCurScroll = 0xD60; // float32
             public const nint m_flScrollSpeed = 0xD64; // float32
             public const nint m_RopeFlags = 0xD68; // uint16
@@ -2847,7 +2847,7 @@ namespace CS2Dumper.Schemas {
             public const nint m_flTimeToNextGust = 0x10BC; // float32
             public const nint m_vWindDir = 0x10C0; // Vector
             public const nint m_vColorMod = 0x10CC; // Vector
-            public const nint m_vCachedEndPointAttachmentPos = 0x10D8; // Vector[2]
+            public const nint m_vCachedEndPointAttachmentPos = 0x10D8; // 
             public const nint m_vCachedEndPointAttachmentAngle = 0x10F0; // QAngle[2]
             public const nint m_bConstrainBetweenEndpoints = 0x1108; // bool
             public const nint m_bEndPointAttachmentPositionsDirty = 0x0; // bitfield:1
@@ -3415,7 +3415,7 @@ namespace CS2Dumper.Schemas {
             public const nint m_flPreSimTime = 0xF44; // float32
             public const nint m_vServerControlPoints = 0xF48; // Vector[4]
             public const nint m_iServerControlPointAssignments = 0xF78; // uint8[4]
-            public const nint m_hControlPointEnts = 0xF7C; // 
+            public const nint m_hControlPointEnts = 0xF7C; // CHandle<C_BaseEntity>[64]
             public const nint m_bNoSave = 0x107C; // bool
             public const nint m_bNoFreeze = 0x107D; // bool
             public const nint m_bNoRamp = 0x107E; // bool
@@ -3986,7 +3986,7 @@ namespace CS2Dumper.Schemas {
             public const nint m_bOverrideWithEvent = 0x5A0; // bool
             public const nint m_soundscapeIndex = 0x5A4; // int32
             public const nint m_soundscapeEntityListId = 0x5A8; // int32
-            public const nint m_positionNames = 0x5B0; // 
+            public const nint m_positionNames = 0x5B0; // CUtlSymbolLarge[8]
             public const nint m_hProxySoundscape = 0x5F0; // CHandle<CEnvSoundscape>
             public const nint m_bDisabled = 0x5F4; // bool
             public const nint m_soundscapeName = 0x5F8; // CUtlSymbolLarge
@@ -4337,7 +4337,7 @@ namespace CS2Dumper.Schemas {
         // NetworkVarNames: m_bFakeLadder (bool)
         public static class C_FuncLadder {
             public const nint m_vecLadderDir = 0xD28; // Vector
-            public const nint m_Dismounts = 0xD38; // CUtlVector<CHandle<C_InfoLadderDismount>>
+            public const nint m_Dismounts = 0xD38; // 
             public const nint m_vecLocalTop = 0xD50; // Vector
             public const nint m_vecPlayerMountPositionTop = 0xD5C; // Vector
             public const nint m_vecPlayerMountPositionBottom = 0xD68; // Vector

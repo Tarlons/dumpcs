@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-07-16 20:34:54.131177500 UTC
+// 2025-07-17 10:10:58.668805600 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
@@ -2804,7 +2804,7 @@ pub mod cs2_dumper {
             // Field count: 2
             pub mod CSkyboxReference {
                 pub const m_worldGroupId: usize = 0x4E0; // WorldGroupId_t
-                pub const m_hSkyCamera: usize = 0x4E4; // CHandle<CSkyCamera>
+                pub const m_hSkyCamera: usize = 0x4E4; // 
             }
             // Parent: CBasePropDoor
             // Field count: 17
@@ -3135,7 +3135,7 @@ pub mod cs2_dumper {
             pub mod CFilterMultiple {
                 pub const m_nFilterType: usize = 0x538; // filter_t
                 pub const m_iFilterName: usize = 0x540; // CUtlSymbolLarge[10]
-                pub const m_hFilter: usize = 0x590; // CHandle<CBaseEntity>[10]
+                pub const m_hFilter: usize = 0x590; // 
                 pub const m_nFilterCount: usize = 0x5B8; // int32
             }
             // Parent: CPlayerPawnComponent
@@ -3853,7 +3853,7 @@ pub mod cs2_dumper {
             // NetworkVarNames: m_flSeqFixedCycle (float)
             // NetworkVarNames: m_nAnimLoopMode (AnimLoopMode_t)
             pub mod CBaseAnimGraphController {
-                pub const m_animGraphNetworkedVars: usize = 0x18; // 
+                pub const m_animGraphNetworkedVars: usize = 0x18; // CAnimGraphNetworkedVariables
                 pub const m_bSequenceFinished: usize = 0x220; // bool
                 pub const m_flSoundSyncTime: usize = 0x224; // float32
                 pub const m_nActiveIKChainMask: usize = 0x228; // uint32
@@ -6246,7 +6246,7 @@ pub mod cs2_dumper {
                 pub const m_bOverrideWithEvent: usize = 0x518; // bool
                 pub const m_soundscapeIndex: usize = 0x51C; // int32
                 pub const m_soundscapeEntityListId: usize = 0x520; // int32
-                pub const m_positionNames: usize = 0x528; // 
+                pub const m_positionNames: usize = 0x528; // CUtlSymbolLarge[8]
                 pub const m_hProxySoundscape: usize = 0x568; // CHandle<CEnvSoundscape>
                 pub const m_bDisabled: usize = 0x56C; // bool
                 pub const m_soundscapeName: usize = 0x570; // CUtlSymbolLarge
@@ -6322,7 +6322,7 @@ pub mod cs2_dumper {
             // Field count: 4
             pub mod CPhysPulley {
                 pub const m_position2: usize = 0x558; // Vector
-                pub const m_offset: usize = 0x564; // Vector[2]
+                pub const m_offset: usize = 0x564; // 
                 pub const m_addLength: usize = 0x57C; // float32
                 pub const m_gearRatio: usize = 0x580; // float32
             }
@@ -6688,7 +6688,7 @@ pub mod cs2_dumper {
                 pub const m_nHaloIndex: usize = 0x7B0; // CStrongHandle<InfoForResourceTypeIMaterial2>
                 pub const m_nBeamType: usize = 0x7B8; // BeamType_t
                 pub const m_nBeamFlags: usize = 0x7BC; // uint32
-                pub const m_hAttachEntity: usize = 0x7C0; // CHandle<CBaseEntity>[10]
+                pub const m_hAttachEntity: usize = 0x7C0; // 
                 pub const m_nAttachIndex: usize = 0x7E8; // AttachmentHandle_t[10]
                 pub const m_fWidth: usize = 0x7F4; // float32
                 pub const m_fEndWidth: usize = 0x7F8; // float32
@@ -7292,7 +7292,7 @@ pub mod cs2_dumper {
                 pub const m_PathNodes_Position: usize = 0x530; // CNetworkUtlVectorBase<Vector>
                 pub const m_PathNodes_TangentIn: usize = 0x548; // CNetworkUtlVectorBase<Vector>
                 pub const m_PathNodes_TangentOut: usize = 0x560; // CNetworkUtlVectorBase<Vector>
-                pub const m_PathNodes_Color: usize = 0x578; // CNetworkUtlVectorBase<Vector>
+                pub const m_PathNodes_Color: usize = 0x578; // 
                 pub const m_PathNodes_PinEnabled: usize = 0x590; // 
                 pub const m_PathNodes_RadiusScale: usize = 0x5A8; // CNetworkUtlVectorBase<float32>
             }
@@ -8314,7 +8314,7 @@ pub mod cs2_dumper {
             // Parent: CPhysConstraint
             // Field count: 6
             pub mod CPhysLength {
-                pub const m_offset: usize = 0x558; // Vector[2]
+                pub const m_offset: usize = 0x558; // 
                 pub const m_vecAttach: usize = 0x570; // Vector
                 pub const m_addLength: usize = 0x57C; // float32
                 pub const m_minLength: usize = 0x580; // float32
@@ -10054,8 +10054,8 @@ pub mod cs2_dumper {
                 pub const m_vecStashedGrenadeThrowPosition: usize = 0x1A6C; // Vector
                 pub const m_vecStashedVelocity: usize = 0x1A78; // Vector
                 pub const m_angShootAngleHistory: usize = 0x1A84; // QAngle[2]
-                pub const m_vecThrowPositionHistory: usize = 0x1A9C; // Vector[2]
-                pub const m_vecVelocityHistory: usize = 0x1AB4; // Vector[2]
+                pub const m_vecThrowPositionHistory: usize = 0x1A9C; // 
+                pub const m_vecVelocityHistory: usize = 0x1AB4; // 
                 pub const m_PredictedDamageTags: usize = 0x1AD0; // CUtlVectorEmbeddedNetworkVar<PredictedDamageTag_t>
                 pub const m_nHighestAppliedDamageTagTick: usize = 0x1B20; // int32
             }
@@ -10968,7 +10968,7 @@ pub mod cs2_dumper {
             // MNetworkIncludeByName
             // MNetworkOverride
             pub mod CFuncMoveLinear {
-                pub const m_authoredPosition: usize = 0x810; // 
+                pub const m_authoredPosition: usize = 0x810; // MoveLinearAuthoredPos_t
                 pub const m_angMoveEntitySpace: usize = 0x814; // QAngle
                 pub const m_vecMoveDirParentSpace: usize = 0x820; // Vector
                 pub const m_soundStart: usize = 0x830; // CUtlSymbolLarge

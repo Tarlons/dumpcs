@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-07-16 20:34:54.131177500 UTC
+// 2025-07-17 10:10:58.668805600 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
@@ -2731,7 +2731,7 @@ pub mod cs2_dumper {
                 pub const m_nFlags: usize = 0x0; // uint32
                 pub const m_nParent: usize = 0x4; // uint16
                 pub const m_nChild: usize = 0x6; // uint16
-                pub const m_params: usize = 0x8; // 
+                pub const m_params: usize = 0x8; // VPhysXConstraintParams_t
             }
             // Parent: None
             // Field count: 6
@@ -3118,7 +3118,7 @@ pub mod cs2_dumper {
                 pub const m_sourceStateNodeIdx: usize = 0x10; // int16
                 pub const m_nInputValueNodeIdx: usize = 0x12; // int16
                 pub const m_flComparand: usize = 0x14; // float32
-                pub const m_type: usize = 0x18; // CNmTimeConditionNode::ComparisonType_t
+                pub const m_type: usize = 0x18; // 
                 pub const m_operator: usize = 0x19; // CNmTimeConditionNode::Operator_t
             }
             // Parent: CNmBoolValueNode__CDefinition
@@ -5373,7 +5373,7 @@ pub mod cs2_dumper {
                 pub const m_nTranslateMotion: usize = 0x1; // int8
                 pub const m_nRotateMotion: usize = 0x2; // int8
                 pub const m_nFlags: usize = 0x3; // int8
-                pub const m_anchor: usize = 0x4; // Vector[2]
+                pub const m_anchor: usize = 0x4; // 
                 pub const m_axes: usize = 0x1C; // QuaternionStorage[2]
                 pub const m_maxForce: usize = 0x3C; // float32
                 pub const m_maxTorque: usize = 0x40; // float32
@@ -5528,7 +5528,7 @@ pub mod cs2_dumper {
             // MGetKV3ClassDefaults
             pub mod CPoseHandle {
                 pub const m_nIndex: usize = 0x0; // uint16
-                pub const m_eType: usize = 0x2; // 
+                pub const m_eType: usize = 0x2; // PoseType_t
             }
             // Parent: CNmIDValueNode__CDefinition
             // Field count: 2
@@ -5612,7 +5612,7 @@ pub mod cs2_dumper {
             pub mod TwoBoneIKSettings_t {
                 pub const m_endEffectorType: usize = 0x0; // IkEndEffectorType
                 pub const m_endEffectorAttachment: usize = 0x10; // CAnimAttachment
-                pub const m_targetType: usize = 0x90; // 
+                pub const m_targetType: usize = 0x90; // IkTargetType
                 pub const m_targetAttachment: usize = 0xA0; // CAnimAttachment
                 pub const m_targetBoneIndex: usize = 0x120; // int32
                 pub const m_hPositionParam: usize = 0x124; // CAnimParamHandle

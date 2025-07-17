@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-07-16 20:34:54.131177500 UTC
+// 2025-07-17 10:10:58.668805600 UTC
 
 #pragma once
 
@@ -2702,7 +2702,7 @@ namespace cs2_dumper {
             // Field count: 2
             namespace CSkyboxReference {
                 constexpr std::ptrdiff_t m_worldGroupId = 0x4E0; // WorldGroupId_t
-                constexpr std::ptrdiff_t m_hSkyCamera = 0x4E4; // CHandle<CSkyCamera>
+                constexpr std::ptrdiff_t m_hSkyCamera = 0x4E4; // 
             }
             // Parent: CBasePropDoor
             // Field count: 17
@@ -3033,7 +3033,7 @@ namespace cs2_dumper {
             namespace CFilterMultiple {
                 constexpr std::ptrdiff_t m_nFilterType = 0x538; // filter_t
                 constexpr std::ptrdiff_t m_iFilterName = 0x540; // CUtlSymbolLarge[10]
-                constexpr std::ptrdiff_t m_hFilter = 0x590; // CHandle<CBaseEntity>[10]
+                constexpr std::ptrdiff_t m_hFilter = 0x590; // 
                 constexpr std::ptrdiff_t m_nFilterCount = 0x5B8; // int32
             }
             // Parent: CPlayerPawnComponent
@@ -3751,7 +3751,7 @@ namespace cs2_dumper {
             // NetworkVarNames: m_flSeqFixedCycle (float)
             // NetworkVarNames: m_nAnimLoopMode (AnimLoopMode_t)
             namespace CBaseAnimGraphController {
-                constexpr std::ptrdiff_t m_animGraphNetworkedVars = 0x18; // 
+                constexpr std::ptrdiff_t m_animGraphNetworkedVars = 0x18; // CAnimGraphNetworkedVariables
                 constexpr std::ptrdiff_t m_bSequenceFinished = 0x220; // bool
                 constexpr std::ptrdiff_t m_flSoundSyncTime = 0x224; // float32
                 constexpr std::ptrdiff_t m_nActiveIKChainMask = 0x228; // uint32
@@ -6144,7 +6144,7 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_bOverrideWithEvent = 0x518; // bool
                 constexpr std::ptrdiff_t m_soundscapeIndex = 0x51C; // int32
                 constexpr std::ptrdiff_t m_soundscapeEntityListId = 0x520; // int32
-                constexpr std::ptrdiff_t m_positionNames = 0x528; // 
+                constexpr std::ptrdiff_t m_positionNames = 0x528; // CUtlSymbolLarge[8]
                 constexpr std::ptrdiff_t m_hProxySoundscape = 0x568; // CHandle<CEnvSoundscape>
                 constexpr std::ptrdiff_t m_bDisabled = 0x56C; // bool
                 constexpr std::ptrdiff_t m_soundscapeName = 0x570; // CUtlSymbolLarge
@@ -6220,7 +6220,7 @@ namespace cs2_dumper {
             // Field count: 4
             namespace CPhysPulley {
                 constexpr std::ptrdiff_t m_position2 = 0x558; // Vector
-                constexpr std::ptrdiff_t m_offset = 0x564; // Vector[2]
+                constexpr std::ptrdiff_t m_offset = 0x564; // 
                 constexpr std::ptrdiff_t m_addLength = 0x57C; // float32
                 constexpr std::ptrdiff_t m_gearRatio = 0x580; // float32
             }
@@ -6586,7 +6586,7 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_nHaloIndex = 0x7B0; // CStrongHandle<InfoForResourceTypeIMaterial2>
                 constexpr std::ptrdiff_t m_nBeamType = 0x7B8; // BeamType_t
                 constexpr std::ptrdiff_t m_nBeamFlags = 0x7BC; // uint32
-                constexpr std::ptrdiff_t m_hAttachEntity = 0x7C0; // CHandle<CBaseEntity>[10]
+                constexpr std::ptrdiff_t m_hAttachEntity = 0x7C0; // 
                 constexpr std::ptrdiff_t m_nAttachIndex = 0x7E8; // AttachmentHandle_t[10]
                 constexpr std::ptrdiff_t m_fWidth = 0x7F4; // float32
                 constexpr std::ptrdiff_t m_fEndWidth = 0x7F8; // float32
@@ -7190,7 +7190,7 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_PathNodes_Position = 0x530; // CNetworkUtlVectorBase<Vector>
                 constexpr std::ptrdiff_t m_PathNodes_TangentIn = 0x548; // CNetworkUtlVectorBase<Vector>
                 constexpr std::ptrdiff_t m_PathNodes_TangentOut = 0x560; // CNetworkUtlVectorBase<Vector>
-                constexpr std::ptrdiff_t m_PathNodes_Color = 0x578; // CNetworkUtlVectorBase<Vector>
+                constexpr std::ptrdiff_t m_PathNodes_Color = 0x578; // 
                 constexpr std::ptrdiff_t m_PathNodes_PinEnabled = 0x590; // 
                 constexpr std::ptrdiff_t m_PathNodes_RadiusScale = 0x5A8; // CNetworkUtlVectorBase<float32>
             }
@@ -8212,7 +8212,7 @@ namespace cs2_dumper {
             // Parent: CPhysConstraint
             // Field count: 6
             namespace CPhysLength {
-                constexpr std::ptrdiff_t m_offset = 0x558; // Vector[2]
+                constexpr std::ptrdiff_t m_offset = 0x558; // 
                 constexpr std::ptrdiff_t m_vecAttach = 0x570; // Vector
                 constexpr std::ptrdiff_t m_addLength = 0x57C; // float32
                 constexpr std::ptrdiff_t m_minLength = 0x580; // float32
@@ -9952,8 +9952,8 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_vecStashedGrenadeThrowPosition = 0x1A6C; // Vector
                 constexpr std::ptrdiff_t m_vecStashedVelocity = 0x1A78; // Vector
                 constexpr std::ptrdiff_t m_angShootAngleHistory = 0x1A84; // QAngle[2]
-                constexpr std::ptrdiff_t m_vecThrowPositionHistory = 0x1A9C; // Vector[2]
-                constexpr std::ptrdiff_t m_vecVelocityHistory = 0x1AB4; // Vector[2]
+                constexpr std::ptrdiff_t m_vecThrowPositionHistory = 0x1A9C; // 
+                constexpr std::ptrdiff_t m_vecVelocityHistory = 0x1AB4; // 
                 constexpr std::ptrdiff_t m_PredictedDamageTags = 0x1AD0; // CUtlVectorEmbeddedNetworkVar<PredictedDamageTag_t>
                 constexpr std::ptrdiff_t m_nHighestAppliedDamageTagTick = 0x1B20; // int32
             }
@@ -10866,7 +10866,7 @@ namespace cs2_dumper {
             // MNetworkIncludeByName
             // MNetworkOverride
             namespace CFuncMoveLinear {
-                constexpr std::ptrdiff_t m_authoredPosition = 0x810; // 
+                constexpr std::ptrdiff_t m_authoredPosition = 0x810; // MoveLinearAuthoredPos_t
                 constexpr std::ptrdiff_t m_angMoveEntitySpace = 0x814; // QAngle
                 constexpr std::ptrdiff_t m_vecMoveDirParentSpace = 0x820; // Vector
                 constexpr std::ptrdiff_t m_soundStart = 0x830; // CUtlSymbolLarge

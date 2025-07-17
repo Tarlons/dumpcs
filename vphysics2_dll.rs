@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-07-16 20:34:54.131177500 UTC
+// 2025-07-17 10:10:58.668805600 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
@@ -57,7 +57,7 @@ pub mod cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             pub mod RnSoftbodyCapsule_t {
-                pub const m_vCenter: usize = 0x0; // Vector[2]
+                pub const m_vCenter: usize = 0x0; // 
                 pub const m_flRadius: usize = 0x18; // float32
                 pub const m_nParticle: usize = 0x1C; // uint16[2]
             }
@@ -337,7 +337,7 @@ pub mod cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             pub mod RnCapsule_t {
-                pub const m_vCenter: usize = 0x0; // Vector[2]
+                pub const m_vCenter: usize = 0x0; // 
                 pub const m_flRadius: usize = 0x18; // float32
             }
             // Parent: None
