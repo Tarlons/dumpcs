@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-07-17 10:10:58.668805600 UTC
+// 2025-08-02 01:17:09.480979800 UTC
 
 #pragma once
 
@@ -11,7 +11,7 @@ namespace cs2_dumper {
         // Class count: 2
         // Enum count: 0
         namespace host_dll {
-            // Parent: CAnimScriptBase
+            // Parent: None
             // Field count: 1
             namespace EmptyTestScript {
                 constexpr std::ptrdiff_t m_hTest = 0x10; // CAnimScriptParam<float32>

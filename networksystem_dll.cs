@@ -1,11 +1,19 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-07-17 10:10:58.668805600 UTC
+// 2025-08-02 01:17:09.480979800 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: networksystem.dll
     // Class count: 1
-    // Enum count: 0
+    // Enum count: 1
     public static class NetworksystemDll {
+        // Alignment: 4
+        // Member count: 4
+        public enum OutOfPVSUpdates_t : uint {
+            OOPVSUpdates_OptOut = 0x0,
+            OOPVSUpdates_OptIn = 0x1,
+            OOPVSUpdates_Default = 0x2,
+            OOPVSUpdates_Count = 0x3
+        }
         // Parent: None
         // Field count: 1
         public static class ChangeAccessorFieldPathIndex_t {
