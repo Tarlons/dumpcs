@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-08-02 01:17:09.480979800 UTC
+// 2025-08-10 16:48:37.016623600 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
@@ -1026,7 +1026,7 @@ pub mod cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             pub mod ParticleChildrenInfo_t {
-                pub const m_ChildRef: usize = 0x0; // 
+                pub const m_ChildRef: usize = 0x0; // CStrongHandle<InfoForResourceTypeIParticleSystemDefinition>
                 pub const m_flDelay: usize = 0x8; // float32
                 pub const m_bEndCap: usize = 0xC; // bool
                 pub const m_bDisableChild: usize = 0xD; // bool
@@ -2657,14 +2657,14 @@ pub mod cs2_dumper {
                 pub const m_nConstantSequenceNumber1: usize = 0x284; // int32
                 pub const m_nSnapshotControlPoint: usize = 0x288; // int32
                 pub const m_hSnapshot: usize = 0x290; // CStrongHandle<InfoForResourceTypeIParticleSnapshot>
-                pub const m_pszCullReplacementName: usize = 0x298; // 
+                pub const m_pszCullReplacementName: usize = 0x298; // CStrongHandle<InfoForResourceTypeIParticleSystemDefinition>
                 pub const m_flCullRadius: usize = 0x2A0; // float32
                 pub const m_flCullFillCost: usize = 0x2A4; // float32
                 pub const m_nCullControlPoint: usize = 0x2A8; // int32
-                pub const m_hFallback: usize = 0x2B0; // 
+                pub const m_hFallback: usize = 0x2B0; // CStrongHandle<InfoForResourceTypeIParticleSystemDefinition>
                 pub const m_nFallbackMaxCount: usize = 0x2B8; // int32
-                pub const m_hLowViolenceDef: usize = 0x2C0; // 
-                pub const m_hReferenceReplacement: usize = 0x2C8; // 
+                pub const m_hLowViolenceDef: usize = 0x2C0; // CStrongHandle<InfoForResourceTypeIParticleSystemDefinition>
+                pub const m_hReferenceReplacement: usize = 0x2C8; // CStrongHandle<InfoForResourceTypeIParticleSystemDefinition>
                 pub const m_flPreSimulationTime: usize = 0x2D0; // float32
                 pub const m_flStopSimulationAfterTime: usize = 0x2D4; // float32
                 pub const m_flMaximumTimeStep: usize = 0x2D8; // float32

@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-08-02 01:17:09.480979800 UTC
+// 2025-08-10 16:48:37.016623600 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: animationsystem.dll
@@ -3058,7 +3058,7 @@ namespace CS2Dumper.Schemas {
         // MGetKV3ClassDefaults
         public static class CNmParameterizedSelectorNode__CDefinition {
             public const nint m_optionNodeIndices = 0x10; // CUtlLeanVectorFixedGrowable<int16,5>
-            public const nint m_optionWeights = 0x28; // 
+            public const nint m_optionWeights = 0x28; // CUtlLeanVectorFixedGrowable<uint8,5>
             public const nint m_parameterNodeIdx = 0x38; // int16
             public const nint m_bIgnoreInvalidOptions = 0x3A; // bool
             public const nint m_bHasWeightsSet = 0x3B; // bool
@@ -3766,7 +3766,7 @@ namespace CS2Dumper.Schemas {
         // MGetKV3ClassDefaults
         // MPropertyFriendlyName
         public static class CParticleAnimTag {
-            public const nint m_hParticleSystem = 0x58; // 
+            public const nint m_hParticleSystem = 0x58; // CStrongHandle<InfoForResourceTypeIParticleSystemDefinition>
             public const nint m_particleSystemName = 0x60; // CUtlString
             public const nint m_configName = 0x68; // CUtlString
             public const nint m_bDetachFromOwner = 0x70; // bool
@@ -3824,7 +3824,7 @@ namespace CS2Dumper.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CPulse_PublicOutput {
-            public const nint m_Name = 0x0; // 
+            public const nint m_Name = 0x0; // PulseSymbol_t
             public const nint m_Description = 0x10; // CUtlString
             public const nint m_Args = 0x18; // CUtlLeanVector<CPulseRuntimeMethodArg>
         }
@@ -3996,10 +3996,10 @@ namespace CS2Dumper.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CPulse_OutputConnection {
-            public const nint m_SourceOutput = 0x0; // 
-            public const nint m_TargetEntity = 0x10; // 
-            public const nint m_TargetInput = 0x20; // 
-            public const nint m_Param = 0x30; // 
+            public const nint m_SourceOutput = 0x0; // PulseSymbol_t
+            public const nint m_TargetEntity = 0x10; // PulseSymbol_t
+            public const nint m_TargetInput = 0x20; // PulseSymbol_t
+            public const nint m_Param = 0x30; // PulseSymbol_t
         }
         // Parent: None
         // Field count: 9
@@ -4156,7 +4156,7 @@ namespace CS2Dumper.Schemas {
         // MGetKV3ClassDefaults
         public static class PulseGraphExecutionHistoryNodeDesc_t {
             public const nint strCellDesc = 0x0; // CBufferString
-            public const nint strBindingName = 0x10; // 
+            public const nint strBindingName = 0x10; // PulseSymbol_t
         }
         // Parent: None
         // Field count: 7
@@ -4352,7 +4352,7 @@ namespace CS2Dumper.Schemas {
         public static class CNmParticleEvent {
             public const nint m_relevance = 0x20; // CNmEventRelevance_t
             public const nint m_type = 0x24; // CNmParticleEvent::Type_t
-            public const nint m_hParticleSystem = 0x28; // 
+            public const nint m_hParticleSystem = 0x28; // CStrongHandle<InfoForResourceTypeIParticleSystemDefinition>
             public const nint m_tags = 0x30; // CUtlString
             public const nint m_bStopImmediately = 0x38; // bool
             public const nint m_attachmentPoint0 = 0x40; // CUtlString
@@ -4491,7 +4491,7 @@ namespace CS2Dumper.Schemas {
             public const nint nEditorID = 0x4; // PulseDocNodeID_t
             public const nint flExecTime = 0x8; // float32
             public const nint unFlags = 0xC; // uint32
-            public const nint tagName = 0x10; // 
+            public const nint tagName = 0x10; // PulseSymbol_t
         }
         // Parent: None
         // Field count: 2
@@ -4674,7 +4674,7 @@ namespace CS2Dumper.Schemas {
             public const nint m_nInstanceID = 0x0; // PulseGraphInstanceID_t
             public const nint m_strFileName = 0x8; // CUtlString
             public const nint m_vecHistory = 0x10; // CUtlVector<PulseGraphExecutionHistoryEntry_t*>
-            public const nint m_mapCellDesc = 0x28; // CUtlOrderedMap<PulseDocNodeID_t,PulseGraphExecutionHistoryNodeDesc_t*>
+            public const nint m_mapCellDesc = 0x28; // 
             public const nint m_mapCursorDesc = 0x50; // 
         }
         // Parent: None
@@ -4889,7 +4889,7 @@ namespace CS2Dumper.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class PGDInstruction_t {
-            public const nint m_nCode = 0x0; // PulseInstructionCode_t
+            public const nint m_nCode = 0x0; // 
             public const nint m_nVar = 0x4; // PulseRuntimeVarIndex_t
             public const nint m_nReg0 = 0x8; // PulseRuntimeRegisterIndex_t
             public const nint m_nReg1 = 0xA; // PulseRuntimeRegisterIndex_t
@@ -5024,7 +5024,7 @@ namespace CS2Dumper.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CPulse_Variable {
-            public const nint m_Name = 0x0; // 
+            public const nint m_Name = 0x0; // PulseSymbol_t
             public const nint m_Description = 0x10; // CUtlString
             public const nint m_Type = 0x18; // CPulseValueFullType
             public const nint m_DefaultValue = 0x30; // KeyValues3
@@ -5429,7 +5429,7 @@ namespace CS2Dumper.Schemas {
         // MGetKV3ClassDefaults
         public static class CMeshletDescriptor {
             public const nint m_PackedAABB = 0x0; // PackedAABB_t
-            public const nint m_CullingData = 0x8; // 
+            public const nint m_CullingData = 0x8; // CDrawCullingData
             public const nint m_nVertexOffset = 0xC; // uint32
             public const nint m_nTriangleOffset = 0x10; // uint32
             public const nint m_nVertexCount = 0x14; // uint8
@@ -6147,7 +6147,7 @@ namespace CS2Dumper.Schemas {
         // MGetKV3ClassDefaults
         public static class CNmParameterizedClipSelectorNode__CDefinition {
             public const nint m_optionNodeIndices = 0x10; // CUtlLeanVectorFixedGrowable<int16,5>
-            public const nint m_optionWeights = 0x28; // 
+            public const nint m_optionWeights = 0x28; // CUtlLeanVectorFixedGrowable<uint8,5>
             public const nint m_parameterNodeIdx = 0x38; // int16
             public const nint m_bIgnoreInvalidOptions = 0x3A; // bool
             public const nint m_bHasWeightsSet = 0x3B; // bool
@@ -6348,7 +6348,7 @@ namespace CS2Dumper.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CRenderSkeleton {
-            public const nint m_bones = 0x0; // 
+            public const nint m_bones = 0x0; // CUtlVector<RenderSkeletonBone_t>
             public const nint m_boneParents = 0x30; // CUtlVector<int32>
             public const nint m_nBoneWeightCount = 0x48; // int32
         }
@@ -6880,7 +6880,7 @@ namespace CS2Dumper.Schemas {
         public static class CAnimUpdateSharedData {
             public const nint m_nodes = 0x10; // CUtlVector<CSmartPtr<CAnimUpdateNodeBase>>
             public const nint m_nodeIndexMap = 0x28; // CUtlHashtable<CAnimNodePath,int32>
-            public const nint m_components = 0x48; // 
+            public const nint m_components = 0x48; // CUtlVector<CSmartPtr<CAnimComponentUpdater>>
             public const nint m_pParamListUpdater = 0x60; // CSmartPtr<CAnimParameterManagerUpdater>
             public const nint m_pTagManagerUpdater = 0x68; // CSmartPtr<CAnimTagManagerUpdater>
             public const nint m_scriptManager = 0x70; // CSmartPtr<CAnimScriptManager>
@@ -7156,7 +7156,7 @@ namespace CS2Dumper.Schemas {
         // MGetKV3ClassDefaults
         public static class CMotionSearchDB {
             public const nint m_rootNode = 0x0; // CMotionSearchNode
-            public const nint m_residualQuantizer = 0x80; // 
+            public const nint m_residualQuantizer = 0x80; // CProductQuantizer
             public const nint m_codeIndices = 0xA0; // CUtlVector<MotionDBIndex>
         }
         // Parent: None

@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-08-02 01:17:09.480979800 UTC
+// 2025-08-10 16:48:37.016623600 UTC
 
 #pragma once
 
@@ -985,7 +985,7 @@ namespace cs2_dumper {
             // MGetKV3ClassDefaults
             namespace CSosGroupActionLimitSchema {
                 constexpr std::ptrdiff_t m_nMaxCount = 0x18; // int32
-                constexpr std::ptrdiff_t m_nStopType = 0x1C; // 
+                constexpr std::ptrdiff_t m_nStopType = 0x1C; // SosActionStopType_t
                 constexpr std::ptrdiff_t m_nSortType = 0x20; // SosActionSortType_t
             }
             // Parent: None

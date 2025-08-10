@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-08-02 01:17:09.480979800 UTC
+// 2025-08-10 16:48:37.016623600 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
@@ -129,7 +129,7 @@ pub mod cs2_dumper {
             // Parent: None
             // Field count: 4
             pub mod CPulse_OutflowConnection {
-                pub const m_SourceOutflowName: usize = 0x0; // 
+                pub const m_SourceOutflowName: usize = 0x0; // PulseSymbol_t
                 pub const m_nDestChunk: usize = 0x10; // PulseRuntimeChunkIndex_t
                 pub const m_nInstruction: usize = 0x14; // int32
                 pub const m_OutflowRegisterMap: usize = 0x18; // PulseRegisterMap_t
@@ -140,10 +140,10 @@ pub mod cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             pub mod CPulseGraphDef {
-                pub const m_DomainIdentifier: usize = 0x8; // 
+                pub const m_DomainIdentifier: usize = 0x8; // PulseSymbol_t
                 pub const m_DomainSubType: usize = 0x18; // CPulseValueFullType
-                pub const m_ParentMapName: usize = 0x30; // 
-                pub const m_ParentXmlName: usize = 0x40; // 
+                pub const m_ParentMapName: usize = 0x30; // PulseSymbol_t
+                pub const m_ParentXmlName: usize = 0x40; // PulseSymbol_t
                 pub const m_Chunks: usize = 0x50; // CUtlVector<CPulse_Chunk*>
                 pub const m_Cells: usize = 0x68; // CUtlVector<CPulseCell_Base*>
                 pub const m_Vars: usize = 0x80; // CUtlVector<CPulse_Variable>
@@ -283,7 +283,7 @@ pub mod cs2_dumper {
             // MPulseCellMethodBindings
             // MPulseCellOutflowHookInfo
             pub mod CPulseCell_Inflow_GraphHook {
-                pub const m_HookName: usize = 0x80; // 
+                pub const m_HookName: usize = 0x80; // PulseSymbol_t
             }
             // Parent: None
             // Field count: 0
@@ -353,7 +353,7 @@ pub mod cs2_dumper {
             // MGetKV3ClassDefaults
             pub mod CPulse_InvokeBinding {
                 pub const m_RegisterMap: usize = 0x0; // PulseRegisterMap_t
-                pub const m_FuncName: usize = 0x30; // 
+                pub const m_FuncName: usize = 0x30; // PulseSymbol_t
                 pub const m_nCellIndex: usize = 0x40; // PulseRuntimeCellIndex_t
                 pub const m_nSrcChunk: usize = 0x44; // PulseRuntimeChunkIndex_t
                 pub const m_nSrcInstruction: usize = 0x48; // int32
@@ -437,7 +437,7 @@ pub mod cs2_dumper {
             // MPulseCellMethodBindings
             // MPulseCellOutflowHookInfo
             pub mod CPulseCell_Inflow_EventHandler {
-                pub const m_EventName: usize = 0x80; // 
+                pub const m_EventName: usize = 0x80; // PulseSymbol_t
             }
             // Parent: None
             // Field count: 0
@@ -463,7 +463,7 @@ pub mod cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             pub mod CPulseCell_Outflow_CycleShuffled__InstanceState_t {
-                pub const m_Shuffle: usize = 0x0; // CUtlVectorFixedGrowable<uint8,8>
+                pub const m_Shuffle: usize = 0x0; // 
                 pub const m_nNextShuffle: usize = 0x20; // int32
             }
             // Parent: None
@@ -489,7 +489,7 @@ pub mod cs2_dumper {
             // Parent: None
             // Field count: 1
             pub mod CPulseCell_WaitForCursorsWithTagBase__CursorState_t {
-                pub const m_TagName: usize = 0x0; // 
+                pub const m_TagName: usize = 0x0; // PulseSymbol_t
             }
             // Parent: None
             // Field count: 0
@@ -547,8 +547,8 @@ pub mod cs2_dumper {
             // MPulseCellMethodBindings
             // MPulseCellOutflowHookInfo
             pub mod CPulseCell_Inflow_EntOutputHandler {
-                pub const m_SourceEntity: usize = 0x80; // 
-                pub const m_SourceOutput: usize = 0x90; // 
+                pub const m_SourceEntity: usize = 0x80; // PulseSymbol_t
+                pub const m_SourceOutput: usize = 0x90; // PulseSymbol_t
                 pub const m_ExpectedParamType: usize = 0xA0; // CPulseValueFullType
             }
             // Parent: None
@@ -762,7 +762,7 @@ pub mod cs2_dumper {
             // MPulseCellMethodBindings
             // MPulseCellOutflowHookInfo
             pub mod CPulseCell_Inflow_Method {
-                pub const m_MethodName: usize = 0x80; // 
+                pub const m_MethodName: usize = 0x80; // PulseSymbol_t
                 pub const m_Description: usize = 0x90; // CUtlString
                 pub const m_bIsPublic: usize = 0x98; // bool
                 pub const m_ReturnType: usize = 0xA0; // CPulseValueFullType
@@ -864,7 +864,7 @@ pub mod cs2_dumper {
             // MGetKV3ClassDefaults
             pub mod CPulse_BlackboardReference {
                 pub const m_hBlackboardResource: usize = 0x0; // CStrongHandle<InfoForResourceTypeIPulseGraphDef>
-                pub const m_BlackboardResource: usize = 0x8; // 
+                pub const m_BlackboardResource: usize = 0x8; // PulseSymbol_t
                 pub const m_nNodeID: usize = 0x18; // PulseDocNodeID_t
                 pub const m_NodeName: usize = 0x20; // CGlobalSymbol
             }
@@ -938,7 +938,7 @@ pub mod cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             pub mod CPulse_CallInfo {
-                pub const m_PortName: usize = 0x0; // 
+                pub const m_PortName: usize = 0x0; // PulseSymbol_t
                 pub const m_nEditorNodeID: usize = 0x10; // PulseDocNodeID_t
                 pub const m_RegisterMap: usize = 0x18; // PulseRegisterMap_t
                 pub const m_CallMethodID: usize = 0x48; // PulseDocNodeID_t
@@ -1004,8 +1004,8 @@ pub mod cs2_dumper {
             // MPulseCellMethodBindings
             // MPulseCellOutflowHookInfo
             pub mod CPulseCell_Step_CallExternalMethod {
-                pub const m_MethodName: usize = 0x48; // 
-                pub const m_GameBlackboard: usize = 0x58; // 
+                pub const m_MethodName: usize = 0x48; // PulseSymbol_t
+                pub const m_GameBlackboard: usize = 0x58; // PulseSymbol_t
                 pub const m_ExpectedArgs: usize = 0x68; // CUtlLeanVector<CPulseRuntimeMethodArg>
                 pub const m_nAsyncCallMode: usize = 0x78; // PulseMethodCallMode_t
                 pub const m_OnFinished: usize = 0x80; // CPulse_ResumePoint

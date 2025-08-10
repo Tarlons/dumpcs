@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-08-02 01:17:09.480979800 UTC
+// 2025-08-10 16:48:37.016623600 UTC
 
 #pragma once
 
@@ -3063,7 +3063,7 @@ namespace cs2_dumper {
             // MGetKV3ClassDefaults
             namespace CNmParameterizedSelectorNode__CDefinition {
                 constexpr std::ptrdiff_t m_optionNodeIndices = 0x10; // CUtlLeanVectorFixedGrowable<int16,5>
-                constexpr std::ptrdiff_t m_optionWeights = 0x28; // 
+                constexpr std::ptrdiff_t m_optionWeights = 0x28; // CUtlLeanVectorFixedGrowable<uint8,5>
                 constexpr std::ptrdiff_t m_parameterNodeIdx = 0x38; // int16
                 constexpr std::ptrdiff_t m_bIgnoreInvalidOptions = 0x3A; // bool
                 constexpr std::ptrdiff_t m_bHasWeightsSet = 0x3B; // bool
@@ -3771,7 +3771,7 @@ namespace cs2_dumper {
             // MGetKV3ClassDefaults
             // MPropertyFriendlyName
             namespace CParticleAnimTag {
-                constexpr std::ptrdiff_t m_hParticleSystem = 0x58; // 
+                constexpr std::ptrdiff_t m_hParticleSystem = 0x58; // CStrongHandle<InfoForResourceTypeIParticleSystemDefinition>
                 constexpr std::ptrdiff_t m_particleSystemName = 0x60; // CUtlString
                 constexpr std::ptrdiff_t m_configName = 0x68; // CUtlString
                 constexpr std::ptrdiff_t m_bDetachFromOwner = 0x70; // bool
@@ -3829,7 +3829,7 @@ namespace cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CPulse_PublicOutput {
-                constexpr std::ptrdiff_t m_Name = 0x0; // 
+                constexpr std::ptrdiff_t m_Name = 0x0; // PulseSymbol_t
                 constexpr std::ptrdiff_t m_Description = 0x10; // CUtlString
                 constexpr std::ptrdiff_t m_Args = 0x18; // CUtlLeanVector<CPulseRuntimeMethodArg>
             }
@@ -4001,10 +4001,10 @@ namespace cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CPulse_OutputConnection {
-                constexpr std::ptrdiff_t m_SourceOutput = 0x0; // 
-                constexpr std::ptrdiff_t m_TargetEntity = 0x10; // 
-                constexpr std::ptrdiff_t m_TargetInput = 0x20; // 
-                constexpr std::ptrdiff_t m_Param = 0x30; // 
+                constexpr std::ptrdiff_t m_SourceOutput = 0x0; // PulseSymbol_t
+                constexpr std::ptrdiff_t m_TargetEntity = 0x10; // PulseSymbol_t
+                constexpr std::ptrdiff_t m_TargetInput = 0x20; // PulseSymbol_t
+                constexpr std::ptrdiff_t m_Param = 0x30; // PulseSymbol_t
             }
             // Parent: None
             // Field count: 9
@@ -4161,7 +4161,7 @@ namespace cs2_dumper {
             // MGetKV3ClassDefaults
             namespace PulseGraphExecutionHistoryNodeDesc_t {
                 constexpr std::ptrdiff_t strCellDesc = 0x0; // CBufferString
-                constexpr std::ptrdiff_t strBindingName = 0x10; // 
+                constexpr std::ptrdiff_t strBindingName = 0x10; // PulseSymbol_t
             }
             // Parent: None
             // Field count: 7
@@ -4357,7 +4357,7 @@ namespace cs2_dumper {
             namespace CNmParticleEvent {
                 constexpr std::ptrdiff_t m_relevance = 0x20; // CNmEventRelevance_t
                 constexpr std::ptrdiff_t m_type = 0x24; // CNmParticleEvent::Type_t
-                constexpr std::ptrdiff_t m_hParticleSystem = 0x28; // 
+                constexpr std::ptrdiff_t m_hParticleSystem = 0x28; // CStrongHandle<InfoForResourceTypeIParticleSystemDefinition>
                 constexpr std::ptrdiff_t m_tags = 0x30; // CUtlString
                 constexpr std::ptrdiff_t m_bStopImmediately = 0x38; // bool
                 constexpr std::ptrdiff_t m_attachmentPoint0 = 0x40; // CUtlString
@@ -4496,7 +4496,7 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t nEditorID = 0x4; // PulseDocNodeID_t
                 constexpr std::ptrdiff_t flExecTime = 0x8; // float32
                 constexpr std::ptrdiff_t unFlags = 0xC; // uint32
-                constexpr std::ptrdiff_t tagName = 0x10; // 
+                constexpr std::ptrdiff_t tagName = 0x10; // PulseSymbol_t
             }
             // Parent: None
             // Field count: 2
@@ -4679,7 +4679,7 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_nInstanceID = 0x0; // PulseGraphInstanceID_t
                 constexpr std::ptrdiff_t m_strFileName = 0x8; // CUtlString
                 constexpr std::ptrdiff_t m_vecHistory = 0x10; // CUtlVector<PulseGraphExecutionHistoryEntry_t*>
-                constexpr std::ptrdiff_t m_mapCellDesc = 0x28; // CUtlOrderedMap<PulseDocNodeID_t,PulseGraphExecutionHistoryNodeDesc_t*>
+                constexpr std::ptrdiff_t m_mapCellDesc = 0x28; // 
                 constexpr std::ptrdiff_t m_mapCursorDesc = 0x50; // 
             }
             // Parent: None
@@ -4894,7 +4894,7 @@ namespace cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             namespace PGDInstruction_t {
-                constexpr std::ptrdiff_t m_nCode = 0x0; // PulseInstructionCode_t
+                constexpr std::ptrdiff_t m_nCode = 0x0; // 
                 constexpr std::ptrdiff_t m_nVar = 0x4; // PulseRuntimeVarIndex_t
                 constexpr std::ptrdiff_t m_nReg0 = 0x8; // PulseRuntimeRegisterIndex_t
                 constexpr std::ptrdiff_t m_nReg1 = 0xA; // PulseRuntimeRegisterIndex_t
@@ -5029,7 +5029,7 @@ namespace cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CPulse_Variable {
-                constexpr std::ptrdiff_t m_Name = 0x0; // 
+                constexpr std::ptrdiff_t m_Name = 0x0; // PulseSymbol_t
                 constexpr std::ptrdiff_t m_Description = 0x10; // CUtlString
                 constexpr std::ptrdiff_t m_Type = 0x18; // CPulseValueFullType
                 constexpr std::ptrdiff_t m_DefaultValue = 0x30; // KeyValues3
@@ -5434,7 +5434,7 @@ namespace cs2_dumper {
             // MGetKV3ClassDefaults
             namespace CMeshletDescriptor {
                 constexpr std::ptrdiff_t m_PackedAABB = 0x0; // PackedAABB_t
-                constexpr std::ptrdiff_t m_CullingData = 0x8; // 
+                constexpr std::ptrdiff_t m_CullingData = 0x8; // CDrawCullingData
                 constexpr std::ptrdiff_t m_nVertexOffset = 0xC; // uint32
                 constexpr std::ptrdiff_t m_nTriangleOffset = 0x10; // uint32
                 constexpr std::ptrdiff_t m_nVertexCount = 0x14; // uint8
@@ -6152,7 +6152,7 @@ namespace cs2_dumper {
             // MGetKV3ClassDefaults
             namespace CNmParameterizedClipSelectorNode__CDefinition {
                 constexpr std::ptrdiff_t m_optionNodeIndices = 0x10; // CUtlLeanVectorFixedGrowable<int16,5>
-                constexpr std::ptrdiff_t m_optionWeights = 0x28; // 
+                constexpr std::ptrdiff_t m_optionWeights = 0x28; // CUtlLeanVectorFixedGrowable<uint8,5>
                 constexpr std::ptrdiff_t m_parameterNodeIdx = 0x38; // int16
                 constexpr std::ptrdiff_t m_bIgnoreInvalidOptions = 0x3A; // bool
                 constexpr std::ptrdiff_t m_bHasWeightsSet = 0x3B; // bool
@@ -6353,7 +6353,7 @@ namespace cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CRenderSkeleton {
-                constexpr std::ptrdiff_t m_bones = 0x0; // 
+                constexpr std::ptrdiff_t m_bones = 0x0; // CUtlVector<RenderSkeletonBone_t>
                 constexpr std::ptrdiff_t m_boneParents = 0x30; // CUtlVector<int32>
                 constexpr std::ptrdiff_t m_nBoneWeightCount = 0x48; // int32
             }
@@ -6885,7 +6885,7 @@ namespace cs2_dumper {
             namespace CAnimUpdateSharedData {
                 constexpr std::ptrdiff_t m_nodes = 0x10; // CUtlVector<CSmartPtr<CAnimUpdateNodeBase>>
                 constexpr std::ptrdiff_t m_nodeIndexMap = 0x28; // CUtlHashtable<CAnimNodePath,int32>
-                constexpr std::ptrdiff_t m_components = 0x48; // 
+                constexpr std::ptrdiff_t m_components = 0x48; // CUtlVector<CSmartPtr<CAnimComponentUpdater>>
                 constexpr std::ptrdiff_t m_pParamListUpdater = 0x60; // CSmartPtr<CAnimParameterManagerUpdater>
                 constexpr std::ptrdiff_t m_pTagManagerUpdater = 0x68; // CSmartPtr<CAnimTagManagerUpdater>
                 constexpr std::ptrdiff_t m_scriptManager = 0x70; // CSmartPtr<CAnimScriptManager>
@@ -7161,7 +7161,7 @@ namespace cs2_dumper {
             // MGetKV3ClassDefaults
             namespace CMotionSearchDB {
                 constexpr std::ptrdiff_t m_rootNode = 0x0; // CMotionSearchNode
-                constexpr std::ptrdiff_t m_residualQuantizer = 0x80; // 
+                constexpr std::ptrdiff_t m_residualQuantizer = 0x80; // CProductQuantizer
                 constexpr std::ptrdiff_t m_codeIndices = 0xA0; // CUtlVector<MotionDBIndex>
             }
             // Parent: None

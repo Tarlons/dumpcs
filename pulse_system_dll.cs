@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-08-02 01:17:09.480979800 UTC
+// 2025-08-10 16:48:37.016623600 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: pulse_system.dll
@@ -123,7 +123,7 @@ namespace CS2Dumper.Schemas {
         // Parent: None
         // Field count: 4
         public static class CPulse_OutflowConnection {
-            public const nint m_SourceOutflowName = 0x0; // 
+            public const nint m_SourceOutflowName = 0x0; // PulseSymbol_t
             public const nint m_nDestChunk = 0x10; // PulseRuntimeChunkIndex_t
             public const nint m_nInstruction = 0x14; // int32
             public const nint m_OutflowRegisterMap = 0x18; // PulseRegisterMap_t
@@ -134,10 +134,10 @@ namespace CS2Dumper.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CPulseGraphDef {
-            public const nint m_DomainIdentifier = 0x8; // 
+            public const nint m_DomainIdentifier = 0x8; // PulseSymbol_t
             public const nint m_DomainSubType = 0x18; // CPulseValueFullType
-            public const nint m_ParentMapName = 0x30; // 
-            public const nint m_ParentXmlName = 0x40; // 
+            public const nint m_ParentMapName = 0x30; // PulseSymbol_t
+            public const nint m_ParentXmlName = 0x40; // PulseSymbol_t
             public const nint m_Chunks = 0x50; // CUtlVector<CPulse_Chunk*>
             public const nint m_Cells = 0x68; // CUtlVector<CPulseCell_Base*>
             public const nint m_Vars = 0x80; // CUtlVector<CPulse_Variable>
@@ -277,7 +277,7 @@ namespace CS2Dumper.Schemas {
         // MPulseCellMethodBindings
         // MPulseCellOutflowHookInfo
         public static class CPulseCell_Inflow_GraphHook {
-            public const nint m_HookName = 0x80; // 
+            public const nint m_HookName = 0x80; // PulseSymbol_t
         }
         // Parent: None
         // Field count: 0
@@ -347,7 +347,7 @@ namespace CS2Dumper.Schemas {
         // MGetKV3ClassDefaults
         public static class CPulse_InvokeBinding {
             public const nint m_RegisterMap = 0x0; // PulseRegisterMap_t
-            public const nint m_FuncName = 0x30; // 
+            public const nint m_FuncName = 0x30; // PulseSymbol_t
             public const nint m_nCellIndex = 0x40; // PulseRuntimeCellIndex_t
             public const nint m_nSrcChunk = 0x44; // PulseRuntimeChunkIndex_t
             public const nint m_nSrcInstruction = 0x48; // int32
@@ -431,7 +431,7 @@ namespace CS2Dumper.Schemas {
         // MPulseCellMethodBindings
         // MPulseCellOutflowHookInfo
         public static class CPulseCell_Inflow_EventHandler {
-            public const nint m_EventName = 0x80; // 
+            public const nint m_EventName = 0x80; // PulseSymbol_t
         }
         // Parent: None
         // Field count: 0
@@ -457,7 +457,7 @@ namespace CS2Dumper.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CPulseCell_Outflow_CycleShuffled__InstanceState_t {
-            public const nint m_Shuffle = 0x0; // CUtlVectorFixedGrowable<uint8,8>
+            public const nint m_Shuffle = 0x0; // 
             public const nint m_nNextShuffle = 0x20; // int32
         }
         // Parent: None
@@ -483,7 +483,7 @@ namespace CS2Dumper.Schemas {
         // Parent: None
         // Field count: 1
         public static class CPulseCell_WaitForCursorsWithTagBase__CursorState_t {
-            public const nint m_TagName = 0x0; // 
+            public const nint m_TagName = 0x0; // PulseSymbol_t
         }
         // Parent: None
         // Field count: 0
@@ -541,8 +541,8 @@ namespace CS2Dumper.Schemas {
         // MPulseCellMethodBindings
         // MPulseCellOutflowHookInfo
         public static class CPulseCell_Inflow_EntOutputHandler {
-            public const nint m_SourceEntity = 0x80; // 
-            public const nint m_SourceOutput = 0x90; // 
+            public const nint m_SourceEntity = 0x80; // PulseSymbol_t
+            public const nint m_SourceOutput = 0x90; // PulseSymbol_t
             public const nint m_ExpectedParamType = 0xA0; // CPulseValueFullType
         }
         // Parent: None
@@ -756,7 +756,7 @@ namespace CS2Dumper.Schemas {
         // MPulseCellMethodBindings
         // MPulseCellOutflowHookInfo
         public static class CPulseCell_Inflow_Method {
-            public const nint m_MethodName = 0x80; // 
+            public const nint m_MethodName = 0x80; // PulseSymbol_t
             public const nint m_Description = 0x90; // CUtlString
             public const nint m_bIsPublic = 0x98; // bool
             public const nint m_ReturnType = 0xA0; // CPulseValueFullType
@@ -858,7 +858,7 @@ namespace CS2Dumper.Schemas {
         // MGetKV3ClassDefaults
         public static class CPulse_BlackboardReference {
             public const nint m_hBlackboardResource = 0x0; // CStrongHandle<InfoForResourceTypeIPulseGraphDef>
-            public const nint m_BlackboardResource = 0x8; // 
+            public const nint m_BlackboardResource = 0x8; // PulseSymbol_t
             public const nint m_nNodeID = 0x18; // PulseDocNodeID_t
             public const nint m_NodeName = 0x20; // CGlobalSymbol
         }
@@ -932,7 +932,7 @@ namespace CS2Dumper.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CPulse_CallInfo {
-            public const nint m_PortName = 0x0; // 
+            public const nint m_PortName = 0x0; // PulseSymbol_t
             public const nint m_nEditorNodeID = 0x10; // PulseDocNodeID_t
             public const nint m_RegisterMap = 0x18; // PulseRegisterMap_t
             public const nint m_CallMethodID = 0x48; // PulseDocNodeID_t
@@ -998,8 +998,8 @@ namespace CS2Dumper.Schemas {
         // MPulseCellMethodBindings
         // MPulseCellOutflowHookInfo
         public static class CPulseCell_Step_CallExternalMethod {
-            public const nint m_MethodName = 0x48; // 
-            public const nint m_GameBlackboard = 0x58; // 
+            public const nint m_MethodName = 0x48; // PulseSymbol_t
+            public const nint m_GameBlackboard = 0x58; // PulseSymbol_t
             public const nint m_ExpectedArgs = 0x68; // CUtlLeanVector<CPulseRuntimeMethodArg>
             public const nint m_nAsyncCallMode = 0x78; // PulseMethodCallMode_t
             public const nint m_OnFinished = 0x80; // CPulse_ResumePoint

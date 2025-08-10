@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-08-02 01:17:09.480979800 UTC
+// 2025-08-10 16:48:37.016623600 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
@@ -997,7 +997,7 @@ pub mod cs2_dumper {
             // MGetKV3ClassDefaults
             pub mod CSosGroupActionLimitSchema {
                 pub const m_nMaxCount: usize = 0x18; // int32
-                pub const m_nStopType: usize = 0x1C; // 
+                pub const m_nStopType: usize = 0x1C; // SosActionStopType_t
                 pub const m_nSortType: usize = 0x20; // SosActionSortType_t
             }
             // Parent: None

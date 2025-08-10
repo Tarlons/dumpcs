@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-08-02 01:17:09.480979800 UTC
+// 2025-08-10 16:48:37.016623600 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
@@ -3190,7 +3190,7 @@ pub mod cs2_dumper {
             // MGetKV3ClassDefaults
             pub mod CNmParameterizedSelectorNode__CDefinition {
                 pub const m_optionNodeIndices: usize = 0x10; // CUtlLeanVectorFixedGrowable<int16,5>
-                pub const m_optionWeights: usize = 0x28; // 
+                pub const m_optionWeights: usize = 0x28; // CUtlLeanVectorFixedGrowable<uint8,5>
                 pub const m_parameterNodeIdx: usize = 0x38; // int16
                 pub const m_bIgnoreInvalidOptions: usize = 0x3A; // bool
                 pub const m_bHasWeightsSet: usize = 0x3B; // bool
@@ -3898,7 +3898,7 @@ pub mod cs2_dumper {
             // MGetKV3ClassDefaults
             // MPropertyFriendlyName
             pub mod CParticleAnimTag {
-                pub const m_hParticleSystem: usize = 0x58; // 
+                pub const m_hParticleSystem: usize = 0x58; // CStrongHandle<InfoForResourceTypeIParticleSystemDefinition>
                 pub const m_particleSystemName: usize = 0x60; // CUtlString
                 pub const m_configName: usize = 0x68; // CUtlString
                 pub const m_bDetachFromOwner: usize = 0x70; // bool
@@ -3956,7 +3956,7 @@ pub mod cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             pub mod CPulse_PublicOutput {
-                pub const m_Name: usize = 0x0; // 
+                pub const m_Name: usize = 0x0; // PulseSymbol_t
                 pub const m_Description: usize = 0x10; // CUtlString
                 pub const m_Args: usize = 0x18; // CUtlLeanVector<CPulseRuntimeMethodArg>
             }
@@ -4128,10 +4128,10 @@ pub mod cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             pub mod CPulse_OutputConnection {
-                pub const m_SourceOutput: usize = 0x0; // 
-                pub const m_TargetEntity: usize = 0x10; // 
-                pub const m_TargetInput: usize = 0x20; // 
-                pub const m_Param: usize = 0x30; // 
+                pub const m_SourceOutput: usize = 0x0; // PulseSymbol_t
+                pub const m_TargetEntity: usize = 0x10; // PulseSymbol_t
+                pub const m_TargetInput: usize = 0x20; // PulseSymbol_t
+                pub const m_Param: usize = 0x30; // PulseSymbol_t
             }
             // Parent: None
             // Field count: 9
@@ -4288,7 +4288,7 @@ pub mod cs2_dumper {
             // MGetKV3ClassDefaults
             pub mod PulseGraphExecutionHistoryNodeDesc_t {
                 pub const strCellDesc: usize = 0x0; // CBufferString
-                pub const strBindingName: usize = 0x10; // 
+                pub const strBindingName: usize = 0x10; // PulseSymbol_t
             }
             // Parent: None
             // Field count: 7
@@ -4484,7 +4484,7 @@ pub mod cs2_dumper {
             pub mod CNmParticleEvent {
                 pub const m_relevance: usize = 0x20; // CNmEventRelevance_t
                 pub const m_type: usize = 0x24; // CNmParticleEvent::Type_t
-                pub const m_hParticleSystem: usize = 0x28; // 
+                pub const m_hParticleSystem: usize = 0x28; // CStrongHandle<InfoForResourceTypeIParticleSystemDefinition>
                 pub const m_tags: usize = 0x30; // CUtlString
                 pub const m_bStopImmediately: usize = 0x38; // bool
                 pub const m_attachmentPoint0: usize = 0x40; // CUtlString
@@ -4623,7 +4623,7 @@ pub mod cs2_dumper {
                 pub const nEditorID: usize = 0x4; // PulseDocNodeID_t
                 pub const flExecTime: usize = 0x8; // float32
                 pub const unFlags: usize = 0xC; // uint32
-                pub const tagName: usize = 0x10; // 
+                pub const tagName: usize = 0x10; // PulseSymbol_t
             }
             // Parent: None
             // Field count: 2
@@ -4806,7 +4806,7 @@ pub mod cs2_dumper {
                 pub const m_nInstanceID: usize = 0x0; // PulseGraphInstanceID_t
                 pub const m_strFileName: usize = 0x8; // CUtlString
                 pub const m_vecHistory: usize = 0x10; // CUtlVector<PulseGraphExecutionHistoryEntry_t*>
-                pub const m_mapCellDesc: usize = 0x28; // CUtlOrderedMap<PulseDocNodeID_t,PulseGraphExecutionHistoryNodeDesc_t*>
+                pub const m_mapCellDesc: usize = 0x28; // 
                 pub const m_mapCursorDesc: usize = 0x50; // 
             }
             // Parent: None
@@ -5021,7 +5021,7 @@ pub mod cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             pub mod PGDInstruction_t {
-                pub const m_nCode: usize = 0x0; // PulseInstructionCode_t
+                pub const m_nCode: usize = 0x0; // 
                 pub const m_nVar: usize = 0x4; // PulseRuntimeVarIndex_t
                 pub const m_nReg0: usize = 0x8; // PulseRuntimeRegisterIndex_t
                 pub const m_nReg1: usize = 0xA; // PulseRuntimeRegisterIndex_t
@@ -5156,7 +5156,7 @@ pub mod cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             pub mod CPulse_Variable {
-                pub const m_Name: usize = 0x0; // 
+                pub const m_Name: usize = 0x0; // PulseSymbol_t
                 pub const m_Description: usize = 0x10; // CUtlString
                 pub const m_Type: usize = 0x18; // CPulseValueFullType
                 pub const m_DefaultValue: usize = 0x30; // KeyValues3
@@ -5561,7 +5561,7 @@ pub mod cs2_dumper {
             // MGetKV3ClassDefaults
             pub mod CMeshletDescriptor {
                 pub const m_PackedAABB: usize = 0x0; // PackedAABB_t
-                pub const m_CullingData: usize = 0x8; // 
+                pub const m_CullingData: usize = 0x8; // CDrawCullingData
                 pub const m_nVertexOffset: usize = 0xC; // uint32
                 pub const m_nTriangleOffset: usize = 0x10; // uint32
                 pub const m_nVertexCount: usize = 0x14; // uint8
@@ -6279,7 +6279,7 @@ pub mod cs2_dumper {
             // MGetKV3ClassDefaults
             pub mod CNmParameterizedClipSelectorNode__CDefinition {
                 pub const m_optionNodeIndices: usize = 0x10; // CUtlLeanVectorFixedGrowable<int16,5>
-                pub const m_optionWeights: usize = 0x28; // 
+                pub const m_optionWeights: usize = 0x28; // CUtlLeanVectorFixedGrowable<uint8,5>
                 pub const m_parameterNodeIdx: usize = 0x38; // int16
                 pub const m_bIgnoreInvalidOptions: usize = 0x3A; // bool
                 pub const m_bHasWeightsSet: usize = 0x3B; // bool
@@ -6480,7 +6480,7 @@ pub mod cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             pub mod CRenderSkeleton {
-                pub const m_bones: usize = 0x0; // 
+                pub const m_bones: usize = 0x0; // CUtlVector<RenderSkeletonBone_t>
                 pub const m_boneParents: usize = 0x30; // CUtlVector<int32>
                 pub const m_nBoneWeightCount: usize = 0x48; // int32
             }
@@ -7012,7 +7012,7 @@ pub mod cs2_dumper {
             pub mod CAnimUpdateSharedData {
                 pub const m_nodes: usize = 0x10; // CUtlVector<CSmartPtr<CAnimUpdateNodeBase>>
                 pub const m_nodeIndexMap: usize = 0x28; // CUtlHashtable<CAnimNodePath,int32>
-                pub const m_components: usize = 0x48; // 
+                pub const m_components: usize = 0x48; // CUtlVector<CSmartPtr<CAnimComponentUpdater>>
                 pub const m_pParamListUpdater: usize = 0x60; // CSmartPtr<CAnimParameterManagerUpdater>
                 pub const m_pTagManagerUpdater: usize = 0x68; // CSmartPtr<CAnimTagManagerUpdater>
                 pub const m_scriptManager: usize = 0x70; // CSmartPtr<CAnimScriptManager>
@@ -7288,7 +7288,7 @@ pub mod cs2_dumper {
             // MGetKV3ClassDefaults
             pub mod CMotionSearchDB {
                 pub const m_rootNode: usize = 0x0; // CMotionSearchNode
-                pub const m_residualQuantizer: usize = 0x80; // 
+                pub const m_residualQuantizer: usize = 0x80; // CProductQuantizer
                 pub const m_codeIndices: usize = 0xA0; // CUtlVector<MotionDBIndex>
             }
             // Parent: None

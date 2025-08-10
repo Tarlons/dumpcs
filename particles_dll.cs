@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-08-02 01:17:09.480979800 UTC
+// 2025-08-10 16:48:37.016623600 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: particles.dll
@@ -958,7 +958,7 @@ namespace CS2Dumper.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class ParticleChildrenInfo_t {
-            public const nint m_ChildRef = 0x0; // 
+            public const nint m_ChildRef = 0x0; // CStrongHandle<InfoForResourceTypeIParticleSystemDefinition>
             public const nint m_flDelay = 0x8; // float32
             public const nint m_bEndCap = 0xC; // bool
             public const nint m_bDisableChild = 0xD; // bool
@@ -2589,14 +2589,14 @@ namespace CS2Dumper.Schemas {
             public const nint m_nConstantSequenceNumber1 = 0x284; // int32
             public const nint m_nSnapshotControlPoint = 0x288; // int32
             public const nint m_hSnapshot = 0x290; // CStrongHandle<InfoForResourceTypeIParticleSnapshot>
-            public const nint m_pszCullReplacementName = 0x298; // 
+            public const nint m_pszCullReplacementName = 0x298; // CStrongHandle<InfoForResourceTypeIParticleSystemDefinition>
             public const nint m_flCullRadius = 0x2A0; // float32
             public const nint m_flCullFillCost = 0x2A4; // float32
             public const nint m_nCullControlPoint = 0x2A8; // int32
-            public const nint m_hFallback = 0x2B0; // 
+            public const nint m_hFallback = 0x2B0; // CStrongHandle<InfoForResourceTypeIParticleSystemDefinition>
             public const nint m_nFallbackMaxCount = 0x2B8; // int32
-            public const nint m_hLowViolenceDef = 0x2C0; // 
-            public const nint m_hReferenceReplacement = 0x2C8; // 
+            public const nint m_hLowViolenceDef = 0x2C0; // CStrongHandle<InfoForResourceTypeIParticleSystemDefinition>
+            public const nint m_hReferenceReplacement = 0x2C8; // CStrongHandle<InfoForResourceTypeIParticleSystemDefinition>
             public const nint m_flPreSimulationTime = 0x2D0; // float32
             public const nint m_flStopSimulationAfterTime = 0x2D4; // float32
             public const nint m_flMaximumTimeStep = 0x2D8; // float32

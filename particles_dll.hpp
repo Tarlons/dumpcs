@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-08-02 01:17:09.480979800 UTC
+// 2025-08-10 16:48:37.016623600 UTC
 
 #pragma once
 
@@ -963,7 +963,7 @@ namespace cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             namespace ParticleChildrenInfo_t {
-                constexpr std::ptrdiff_t m_ChildRef = 0x0; // 
+                constexpr std::ptrdiff_t m_ChildRef = 0x0; // CStrongHandle<InfoForResourceTypeIParticleSystemDefinition>
                 constexpr std::ptrdiff_t m_flDelay = 0x8; // float32
                 constexpr std::ptrdiff_t m_bEndCap = 0xC; // bool
                 constexpr std::ptrdiff_t m_bDisableChild = 0xD; // bool
@@ -2594,14 +2594,14 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_nConstantSequenceNumber1 = 0x284; // int32
                 constexpr std::ptrdiff_t m_nSnapshotControlPoint = 0x288; // int32
                 constexpr std::ptrdiff_t m_hSnapshot = 0x290; // CStrongHandle<InfoForResourceTypeIParticleSnapshot>
-                constexpr std::ptrdiff_t m_pszCullReplacementName = 0x298; // 
+                constexpr std::ptrdiff_t m_pszCullReplacementName = 0x298; // CStrongHandle<InfoForResourceTypeIParticleSystemDefinition>
                 constexpr std::ptrdiff_t m_flCullRadius = 0x2A0; // float32
                 constexpr std::ptrdiff_t m_flCullFillCost = 0x2A4; // float32
                 constexpr std::ptrdiff_t m_nCullControlPoint = 0x2A8; // int32
-                constexpr std::ptrdiff_t m_hFallback = 0x2B0; // 
+                constexpr std::ptrdiff_t m_hFallback = 0x2B0; // CStrongHandle<InfoForResourceTypeIParticleSystemDefinition>
                 constexpr std::ptrdiff_t m_nFallbackMaxCount = 0x2B8; // int32
-                constexpr std::ptrdiff_t m_hLowViolenceDef = 0x2C0; // 
-                constexpr std::ptrdiff_t m_hReferenceReplacement = 0x2C8; // 
+                constexpr std::ptrdiff_t m_hLowViolenceDef = 0x2C0; // CStrongHandle<InfoForResourceTypeIParticleSystemDefinition>
+                constexpr std::ptrdiff_t m_hReferenceReplacement = 0x2C8; // CStrongHandle<InfoForResourceTypeIParticleSystemDefinition>
                 constexpr std::ptrdiff_t m_flPreSimulationTime = 0x2D0; // float32
                 constexpr std::ptrdiff_t m_flStopSimulationAfterTime = 0x2D4; // float32
                 constexpr std::ptrdiff_t m_flMaximumTimeStep = 0x2D8; // float32
