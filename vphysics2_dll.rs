@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-08-10 16:48:37.016623600 UTC
+// 2025-08-15 04:38:18.156540700 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
@@ -93,9 +93,9 @@ pub mod cs2_dumper {
                 pub const m_nRopeCount: usize = 0x58; // uint16
                 pub const m_Ropes: usize = 0x60; // CUtlVector<uint16>
                 pub const m_NodeBases: usize = 0x78; // CUtlVector<FeNodeBase_t>
-                pub const m_SimdNodeBases: usize = 0x90; // 
-                pub const m_Quads: usize = 0xA8; // 
-                pub const m_SimdQuads: usize = 0xC0; // 
+                pub const m_SimdNodeBases: usize = 0x90; // CUtlVector<FeSimdNodeBase_t>
+                pub const m_Quads: usize = 0xA8; // CUtlVector<FeQuad_t>
+                pub const m_SimdQuads: usize = 0xC0; // CUtlVector<FeSimdQuad_t>
                 pub const m_SimdTris: usize = 0xD8; // CUtlVector<FeSimdTri_t>
                 pub const m_SimdRods: usize = 0xF0; // CUtlVector<FeSimdRodConstraint_t>
                 pub const m_SimdRodsAnim: usize = 0x108; // CUtlVector<FeSimdRodConstraintAnim_t>
@@ -244,7 +244,7 @@ pub mod cs2_dumper {
             pub mod FeBandBendLimit_t {
                 pub const flDistMin: usize = 0x0; // float32
                 pub const flDistMax: usize = 0x4; // float32
-                pub const nNode: usize = 0x8; // 
+                pub const nNode: usize = 0x8; // uint16[6]
             }
             // Parent: None
             // Field count: 4
@@ -271,7 +271,7 @@ pub mod cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             pub mod FeSimdRodConstraintAnim_t {
-                pub const nNode: usize = 0x0; // 
+                pub const nNode: usize = 0x0; // uint16[4][2]
                 pub const f4Weight0: usize = 0x10; // fltx4
                 pub const f4RelaxationFactor: usize = 0x20; // fltx4
             }
@@ -281,7 +281,7 @@ pub mod cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             pub mod FeSimdRodConstraint_t {
-                pub const nNode: usize = 0x0; // 
+                pub const nNode: usize = 0x0; // uint16[4][2]
                 pub const f4MaxDist: usize = 0x10; // fltx4
                 pub const f4MinDist: usize = 0x20; // fltx4
                 pub const f4Weight0: usize = 0x30; // fltx4
@@ -311,7 +311,7 @@ pub mod cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             pub mod FeSimdAnimStrayRadius_t {
-                pub const nNode: usize = 0x0; // 
+                pub const nNode: usize = 0x0; // uint16[4][2]
                 pub const flMaxDist: usize = 0x10; // fltx4
                 pub const flRelaxationFactor: usize = 0x20; // fltx4
             }
@@ -705,8 +705,8 @@ pub mod cs2_dumper {
             pub mod FeSimdQuad_t {
                 pub const nNode: usize = 0x0; // uint16[4][4]
                 pub const f4Slack: usize = 0x20; // fltx4
-                pub const vShape: usize = 0x30; // 
-                pub const f4Weights: usize = 0xF0; // 
+                pub const vShape: usize = 0x30; // FourVectors[4]
+                pub const f4Weights: usize = 0xF0; // fltx4[4]
             }
             // Parent: None
             // Field count: 5
@@ -714,7 +714,7 @@ pub mod cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             pub mod FeSimdSpringIntegrator_t {
-                pub const nNode: usize = 0x0; // 
+                pub const nNode: usize = 0x0; // uint16[4][2]
                 pub const flSpringRestLength: usize = 0x10; // fltx4
                 pub const flSpringConstant: usize = 0x20; // fltx4
                 pub const flSpringDamping: usize = 0x30; // fltx4
@@ -750,7 +750,7 @@ pub mod cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             pub mod FeHingeLimit_t {
-                pub const nNode: usize = 0x0; // 
+                pub const nNode: usize = 0x0; // uint16[6]
                 pub const nFlags: usize = 0xC; // uint32
                 pub const flWeight4: usize = 0x10; // float32
                 pub const flWeight5: usize = 0x14; // float32
@@ -850,7 +850,7 @@ pub mod cs2_dumper {
             pub mod FeCollisionPlane_t {
                 pub const nCtrlParent: usize = 0x0; // uint16
                 pub const nChildNode: usize = 0x2; // uint16
-                pub const m_Plane: usize = 0x4; // 
+                pub const m_Plane: usize = 0x4; // RnPlane_t
                 pub const flStrength: usize = 0x14; // float32
             }
             // Parent: None
@@ -1096,7 +1096,7 @@ pub mod cs2_dumper {
                 pub const tv: usize = 0x4; // float32
                 pub const flDist: usize = 0x8; // float32
                 pub const flWeight: usize = 0xC; // float32[4]
-                pub const nNode: usize = 0x1C; // 
+                pub const nNode: usize = 0x1C; // uint16[6]
             }
             // Parent: None
             // Field count: 4
@@ -1104,7 +1104,7 @@ pub mod cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             pub mod FourCovMatrices3 {
-                pub const m_vDiag: usize = 0x0; // 
+                pub const m_vDiag: usize = 0x0; // FourVectors
                 pub const m_flXY: usize = 0x30; // fltx4
                 pub const m_flXZ: usize = 0x40; // fltx4
                 pub const m_flYZ: usize = 0x50; // fltx4
@@ -1236,7 +1236,7 @@ pub mod cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             pub mod FeHingeLimitBuild_t {
-                pub const nNode: usize = 0x0; // 
+                pub const nNode: usize = 0x0; // uint16[6]
                 pub const nFlags: usize = 0xC; // uint32
                 pub const flLimitCW: usize = 0x10; // float32
                 pub const flLimitCCW: usize = 0x14; // float32

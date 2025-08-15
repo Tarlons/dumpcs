@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-08-10 16:48:37.016623600 UTC
+// 2025-08-15 04:38:18.156540700 UTC
 
 #pragma once
 
@@ -92,9 +92,9 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_nRopeCount = 0x58; // uint16
                 constexpr std::ptrdiff_t m_Ropes = 0x60; // CUtlVector<uint16>
                 constexpr std::ptrdiff_t m_NodeBases = 0x78; // CUtlVector<FeNodeBase_t>
-                constexpr std::ptrdiff_t m_SimdNodeBases = 0x90; // 
-                constexpr std::ptrdiff_t m_Quads = 0xA8; // 
-                constexpr std::ptrdiff_t m_SimdQuads = 0xC0; // 
+                constexpr std::ptrdiff_t m_SimdNodeBases = 0x90; // CUtlVector<FeSimdNodeBase_t>
+                constexpr std::ptrdiff_t m_Quads = 0xA8; // CUtlVector<FeQuad_t>
+                constexpr std::ptrdiff_t m_SimdQuads = 0xC0; // CUtlVector<FeSimdQuad_t>
                 constexpr std::ptrdiff_t m_SimdTris = 0xD8; // CUtlVector<FeSimdTri_t>
                 constexpr std::ptrdiff_t m_SimdRods = 0xF0; // CUtlVector<FeSimdRodConstraint_t>
                 constexpr std::ptrdiff_t m_SimdRodsAnim = 0x108; // CUtlVector<FeSimdRodConstraintAnim_t>
@@ -243,7 +243,7 @@ namespace cs2_dumper {
             namespace FeBandBendLimit_t {
                 constexpr std::ptrdiff_t flDistMin = 0x0; // float32
                 constexpr std::ptrdiff_t flDistMax = 0x4; // float32
-                constexpr std::ptrdiff_t nNode = 0x8; // 
+                constexpr std::ptrdiff_t nNode = 0x8; // uint16[6]
             }
             // Parent: None
             // Field count: 4
@@ -270,7 +270,7 @@ namespace cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             namespace FeSimdRodConstraintAnim_t {
-                constexpr std::ptrdiff_t nNode = 0x0; // 
+                constexpr std::ptrdiff_t nNode = 0x0; // uint16[4][2]
                 constexpr std::ptrdiff_t f4Weight0 = 0x10; // fltx4
                 constexpr std::ptrdiff_t f4RelaxationFactor = 0x20; // fltx4
             }
@@ -280,7 +280,7 @@ namespace cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             namespace FeSimdRodConstraint_t {
-                constexpr std::ptrdiff_t nNode = 0x0; // 
+                constexpr std::ptrdiff_t nNode = 0x0; // uint16[4][2]
                 constexpr std::ptrdiff_t f4MaxDist = 0x10; // fltx4
                 constexpr std::ptrdiff_t f4MinDist = 0x20; // fltx4
                 constexpr std::ptrdiff_t f4Weight0 = 0x30; // fltx4
@@ -310,7 +310,7 @@ namespace cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             namespace FeSimdAnimStrayRadius_t {
-                constexpr std::ptrdiff_t nNode = 0x0; // 
+                constexpr std::ptrdiff_t nNode = 0x0; // uint16[4][2]
                 constexpr std::ptrdiff_t flMaxDist = 0x10; // fltx4
                 constexpr std::ptrdiff_t flRelaxationFactor = 0x20; // fltx4
             }
@@ -704,8 +704,8 @@ namespace cs2_dumper {
             namespace FeSimdQuad_t {
                 constexpr std::ptrdiff_t nNode = 0x0; // uint16[4][4]
                 constexpr std::ptrdiff_t f4Slack = 0x20; // fltx4
-                constexpr std::ptrdiff_t vShape = 0x30; // 
-                constexpr std::ptrdiff_t f4Weights = 0xF0; // 
+                constexpr std::ptrdiff_t vShape = 0x30; // FourVectors[4]
+                constexpr std::ptrdiff_t f4Weights = 0xF0; // fltx4[4]
             }
             // Parent: None
             // Field count: 5
@@ -713,7 +713,7 @@ namespace cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             namespace FeSimdSpringIntegrator_t {
-                constexpr std::ptrdiff_t nNode = 0x0; // 
+                constexpr std::ptrdiff_t nNode = 0x0; // uint16[4][2]
                 constexpr std::ptrdiff_t flSpringRestLength = 0x10; // fltx4
                 constexpr std::ptrdiff_t flSpringConstant = 0x20; // fltx4
                 constexpr std::ptrdiff_t flSpringDamping = 0x30; // fltx4
@@ -749,7 +749,7 @@ namespace cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             namespace FeHingeLimit_t {
-                constexpr std::ptrdiff_t nNode = 0x0; // 
+                constexpr std::ptrdiff_t nNode = 0x0; // uint16[6]
                 constexpr std::ptrdiff_t nFlags = 0xC; // uint32
                 constexpr std::ptrdiff_t flWeight4 = 0x10; // float32
                 constexpr std::ptrdiff_t flWeight5 = 0x14; // float32
@@ -849,7 +849,7 @@ namespace cs2_dumper {
             namespace FeCollisionPlane_t {
                 constexpr std::ptrdiff_t nCtrlParent = 0x0; // uint16
                 constexpr std::ptrdiff_t nChildNode = 0x2; // uint16
-                constexpr std::ptrdiff_t m_Plane = 0x4; // 
+                constexpr std::ptrdiff_t m_Plane = 0x4; // RnPlane_t
                 constexpr std::ptrdiff_t flStrength = 0x14; // float32
             }
             // Parent: None
@@ -1095,7 +1095,7 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t tv = 0x4; // float32
                 constexpr std::ptrdiff_t flDist = 0x8; // float32
                 constexpr std::ptrdiff_t flWeight = 0xC; // float32[4]
-                constexpr std::ptrdiff_t nNode = 0x1C; // 
+                constexpr std::ptrdiff_t nNode = 0x1C; // uint16[6]
             }
             // Parent: None
             // Field count: 4
@@ -1103,7 +1103,7 @@ namespace cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             namespace FourCovMatrices3 {
-                constexpr std::ptrdiff_t m_vDiag = 0x0; // 
+                constexpr std::ptrdiff_t m_vDiag = 0x0; // FourVectors
                 constexpr std::ptrdiff_t m_flXY = 0x30; // fltx4
                 constexpr std::ptrdiff_t m_flXZ = 0x40; // fltx4
                 constexpr std::ptrdiff_t m_flYZ = 0x50; // fltx4
@@ -1235,7 +1235,7 @@ namespace cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             namespace FeHingeLimitBuild_t {
-                constexpr std::ptrdiff_t nNode = 0x0; // 
+                constexpr std::ptrdiff_t nNode = 0x0; // uint16[6]
                 constexpr std::ptrdiff_t nFlags = 0xC; // uint32
                 constexpr std::ptrdiff_t flLimitCW = 0x10; // float32
                 constexpr std::ptrdiff_t flLimitCCW = 0x14; // float32

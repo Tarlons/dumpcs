@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-08-10 16:48:37.016623600 UTC
+// 2025-08-15 04:38:18.156540700 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: vphysics2.dll
@@ -87,9 +87,9 @@ namespace CS2Dumper.Schemas {
             public const nint m_nRopeCount = 0x58; // uint16
             public const nint m_Ropes = 0x60; // CUtlVector<uint16>
             public const nint m_NodeBases = 0x78; // CUtlVector<FeNodeBase_t>
-            public const nint m_SimdNodeBases = 0x90; // 
-            public const nint m_Quads = 0xA8; // 
-            public const nint m_SimdQuads = 0xC0; // 
+            public const nint m_SimdNodeBases = 0x90; // CUtlVector<FeSimdNodeBase_t>
+            public const nint m_Quads = 0xA8; // CUtlVector<FeQuad_t>
+            public const nint m_SimdQuads = 0xC0; // CUtlVector<FeSimdQuad_t>
             public const nint m_SimdTris = 0xD8; // CUtlVector<FeSimdTri_t>
             public const nint m_SimdRods = 0xF0; // CUtlVector<FeSimdRodConstraint_t>
             public const nint m_SimdRodsAnim = 0x108; // CUtlVector<FeSimdRodConstraintAnim_t>
@@ -238,7 +238,7 @@ namespace CS2Dumper.Schemas {
         public static class FeBandBendLimit_t {
             public const nint flDistMin = 0x0; // float32
             public const nint flDistMax = 0x4; // float32
-            public const nint nNode = 0x8; // 
+            public const nint nNode = 0x8; // uint16[6]
         }
         // Parent: None
         // Field count: 4
@@ -265,7 +265,7 @@ namespace CS2Dumper.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class FeSimdRodConstraintAnim_t {
-            public const nint nNode = 0x0; // 
+            public const nint nNode = 0x0; // uint16[4][2]
             public const nint f4Weight0 = 0x10; // fltx4
             public const nint f4RelaxationFactor = 0x20; // fltx4
         }
@@ -275,7 +275,7 @@ namespace CS2Dumper.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class FeSimdRodConstraint_t {
-            public const nint nNode = 0x0; // 
+            public const nint nNode = 0x0; // uint16[4][2]
             public const nint f4MaxDist = 0x10; // fltx4
             public const nint f4MinDist = 0x20; // fltx4
             public const nint f4Weight0 = 0x30; // fltx4
@@ -305,7 +305,7 @@ namespace CS2Dumper.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class FeSimdAnimStrayRadius_t {
-            public const nint nNode = 0x0; // 
+            public const nint nNode = 0x0; // uint16[4][2]
             public const nint flMaxDist = 0x10; // fltx4
             public const nint flRelaxationFactor = 0x20; // fltx4
         }
@@ -699,8 +699,8 @@ namespace CS2Dumper.Schemas {
         public static class FeSimdQuad_t {
             public const nint nNode = 0x0; // uint16[4][4]
             public const nint f4Slack = 0x20; // fltx4
-            public const nint vShape = 0x30; // 
-            public const nint f4Weights = 0xF0; // 
+            public const nint vShape = 0x30; // FourVectors[4]
+            public const nint f4Weights = 0xF0; // fltx4[4]
         }
         // Parent: None
         // Field count: 5
@@ -708,7 +708,7 @@ namespace CS2Dumper.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class FeSimdSpringIntegrator_t {
-            public const nint nNode = 0x0; // 
+            public const nint nNode = 0x0; // uint16[4][2]
             public const nint flSpringRestLength = 0x10; // fltx4
             public const nint flSpringConstant = 0x20; // fltx4
             public const nint flSpringDamping = 0x30; // fltx4
@@ -744,7 +744,7 @@ namespace CS2Dumper.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class FeHingeLimit_t {
-            public const nint nNode = 0x0; // 
+            public const nint nNode = 0x0; // uint16[6]
             public const nint nFlags = 0xC; // uint32
             public const nint flWeight4 = 0x10; // float32
             public const nint flWeight5 = 0x14; // float32
@@ -844,7 +844,7 @@ namespace CS2Dumper.Schemas {
         public static class FeCollisionPlane_t {
             public const nint nCtrlParent = 0x0; // uint16
             public const nint nChildNode = 0x2; // uint16
-            public const nint m_Plane = 0x4; // 
+            public const nint m_Plane = 0x4; // RnPlane_t
             public const nint flStrength = 0x14; // float32
         }
         // Parent: None
@@ -1090,7 +1090,7 @@ namespace CS2Dumper.Schemas {
             public const nint tv = 0x4; // float32
             public const nint flDist = 0x8; // float32
             public const nint flWeight = 0xC; // float32[4]
-            public const nint nNode = 0x1C; // 
+            public const nint nNode = 0x1C; // uint16[6]
         }
         // Parent: None
         // Field count: 4
@@ -1098,7 +1098,7 @@ namespace CS2Dumper.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class FourCovMatrices3 {
-            public const nint m_vDiag = 0x0; // 
+            public const nint m_vDiag = 0x0; // FourVectors
             public const nint m_flXY = 0x30; // fltx4
             public const nint m_flXZ = 0x40; // fltx4
             public const nint m_flYZ = 0x50; // fltx4
@@ -1230,7 +1230,7 @@ namespace CS2Dumper.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class FeHingeLimitBuild_t {
-            public const nint nNode = 0x0; // 
+            public const nint nNode = 0x0; // uint16[6]
             public const nint nFlags = 0xC; // uint32
             public const nint flLimitCW = 0x10; // float32
             public const nint flLimitCCW = 0x14; // float32
