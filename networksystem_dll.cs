@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-08-28 04:01:21.299920800 UTC
+// 2025-09-06 04:14:23.972594 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: networksystem.dll
@@ -20,4 +20,6 @@ namespace CS2Dumper.Schemas {
             public const nint m_Value = 0x0; // int32
         }
     }
+}
+
 }

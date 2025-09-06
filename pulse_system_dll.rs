@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-08-28 04:01:21.299920800 UTC
+// 2025-09-06 04:14:23.972594 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
@@ -1076,4 +1076,6 @@ pub mod cs2_dumper {
             }
         }
     }
+}
+
 }
