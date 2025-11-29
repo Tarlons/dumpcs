@@ -1,10 +1,10 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-11-29 05:57:02.535407500 UTC
+// 2025-11-29 07:57:07.944332300 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: rendersystemdx11.dll
     // Class count: 8
-    // Enum count: 0
+    // Enum count: 18
     public static class Rendersystemdx11Dll {
         // Parent: None
         // Field count: 4

@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-11-29 05:57:02.535407500 UTC
+// 2025-11-29 07:57:07.944332300 UTC
 
 #![allow(non_upper_case_globals, unused)]
 
@@ -20,10 +20,6 @@ pub mod cs2_dumper {
             pub const Source2ClientConfig001: usize = 0x1DC3E50;
             pub const Source2ClientPrediction001: usize = 0x1BECE50;
             pub const Source2ClientUI001: usize = 0x1BFF670;
-        }
-        // Module: crashhandler64.dll
-        pub mod crashhandler64_dll {
-            pub const : usize = 0xFFFF8004AA350007;
         }
         // Module: engine2.dll
         pub mod engine2_dll {

@@ -563,24 +563,45 @@
       }
     },
     "enums": {
-      "___W_": {
-        "alignment": 36,
+      "__Y__": {
+        "alignment": 207,
         "members": {
-          "": 33554432
+          "": 2314885530818447995
         },
         "type": "unknown"
       },
-      "_____": {
+      "___A": {
+        "alignment": 36,
+        "members": {
+          "": 8718968882880444419
+        },
+        "type": "unknown"
+      },
+      "____": {
+        "alignment": 68,
+        "members": {
+          "": 0
+        },
+        "type": "unknown"
+      },
+      "____A": {
+        "alignment": 153,
+        "members": {
+          "": 4291164163
+        },
+        "type": "unknown"
+      },
+      "___k__": {
         "alignment": 0,
         "members": {
           "": 0
         },
         "type": "unknown"
       },
-      "__b__": {
-        "alignment": 208,
+      "h____": {
+        "alignment": 68,
         "members": {
-          "": 5220909275965055839
+          "": 0
         },
         "type": "unknown"
       }
